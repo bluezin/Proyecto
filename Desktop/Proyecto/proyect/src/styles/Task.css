@@ -1,12 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
 
-.Task {
+
+.Task{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
-  margin: 20px;
 }
-
 .Button {
   margin-top: 20px;
   font-size: 15px;
@@ -19,37 +18,48 @@
   color: white;
   box-shadow: 0 0 6px rgb(45, 192, 192);
 }
-.imagen-profesor {
-  position: absolute;
-  top: 220px;
-  margin-left: 6px;
+
+.trazado{
+  width: 100%;
+  position: fixed;
+  top: 33%;
+  left: 0;
+  z-index: 0;
 }
 .student {
   position: absolute;
-  top: 220px;
-  margin-left: 6px;
+  margin: -2% 0% 0% 1%;
 }
 .student-parrafo {
   position: absolute;
-  margin-left: 7px;
-  margin-top: 50px;
+  margin: 7% 0% 0% 1%;
   text-transform: uppercase;
   font-family: "Rajdhani", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
 }
 .profesor-parrafo {
   position: absolute;
-  margin-top: 50px;
-  margin-left: 6px;
+  margin: 7% 0% 0% 1%;
   text-transform: uppercase;
   font-family: "Rajdhani", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
+}
+.imagen-profesor{
+  width   : 11%;
+  height  : 14%;
+  position: absolute;
+  margin  : -3% 0% 0% 0.7%;
+}
+.poligono{
+  width: 54%;
+  height: 56%;
 }
 
 .div-imagen {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: -7% 0%;
 }
 .sabes {
   color: rgb(90, 178, 207);

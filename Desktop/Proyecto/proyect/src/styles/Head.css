@@ -1,15 +1,25 @@
-@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Satisfy&display=swap);
-
-
+@import url(https://fonts.googleapis.com/css2?family=Marck+Script&family=Petit+Formal+Script&family=Pinyon+Script&display=swap);
 
 .Head{
-font-family: 'Satisfy', cursive;
-background-image: url(../imagenes/hombre.jpg);
-background-size: contain;
-background-repeat: no-repeat;    
-
+  /* font-family : 'Marck Script', cursive; */
+  /* font-family : 'Petit Formal Script', cursive; */
+  font-family      : 'Pinyon Script', cursive;
+  background-image : url(../imagenes/hombre.png);
+  background-size  : cover;
+  background-repeat: no-repeat;    
+  height: 300px;
+  z-index: 1 !important;
 }
 
+h1{
+  margin: 2% 3% 0 3%;
+  font-size: 9em;
+}
+p{
+  margin: 0% 3% 0 3%;
+  
+  font-size: 3.3em;
+}
 .iamgen-head{
   text-align: center;
 }
