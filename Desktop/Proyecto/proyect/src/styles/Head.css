@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Satisfy&display=swap);
+
+
+
+.Head{
+font-family: 'Satisfy', cursive;
+background-image: url(../imagenes/hombre.jpg);
+background-size: contain;
+background-repeat: no-repeat;    
+
+}
+
+.iamgen-head{
+  text-align: center;
+}
