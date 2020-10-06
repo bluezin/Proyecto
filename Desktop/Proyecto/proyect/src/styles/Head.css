@@ -1,15 +1,24 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Satisfy&display=swap);
 
-
-
-.Head{
-font-family: 'Satisfy', cursive;
-background-image: url(../imagenes/hombre.jpg);
-background-size: contain;
-background-repeat: no-repeat;    
+.Head {
+  font-family: "Satisfy", cursive;
 
 }
 
-.iamgen-head{
-  text-align: center;
-}
+
+/* .hombre{
+  width: 100%;
+  padding: 0;
+  clip-path: polygon(
+    6% 50%,
+    6% 4%,
+    36% 3%,
+    67% 3%,
+    97% 3%,
+    97% 51%,
+    86% 71%,
+    51% 71%,
+    21% 71%
+  );
+  margin: 0;
+} */

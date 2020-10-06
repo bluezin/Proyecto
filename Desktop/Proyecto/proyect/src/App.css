@@ -1,8 +1,25 @@
-
-
 body {
- 
-  width: 90%;
+  width: 93%;
   background-color: #d1d0d0;
-  margin: auto;
+}
+.hombre {
+  clip-path: polygon(
+    6% 50%,
+    6% 4%,
+    67% 3%,
+    36% 3%,
+    97% 3%,
+    97% 51%,
+    86% 71%,
+    51% 71%,
+    21% 71%
+  );
+  width: 116%;
+
+  height: 30em;
+  margin-top: -24px;
+  margin-left: -82px;
+}
+.hombre-div {
+  text-align: center;
 }

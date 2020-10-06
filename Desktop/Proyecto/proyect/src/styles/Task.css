@@ -21,13 +21,14 @@
 }
 .imagen-profesor {
   position: absolute;
-  top: 220px;
   margin-left: 6px;
+  margin-top: -35px;
 }
 .student {
   position: absolute;
-  top: 220px;
   margin-left: 6px;
+  margin-top: -25px;
+
 }
 .student-parrafo {
   position: absolute;
