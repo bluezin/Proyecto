@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Rutas from './Components/Rutas';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Rutas />
   </React.StrictMode>,
   document.getElementById('root')
 );

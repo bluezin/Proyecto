@@ -22,3 +22,30 @@
   );
   margin: 0;
 } */
+@import url(https://fonts.googleapis.com/css2?family=Marck+Script&family=Petit+Formal+Script&family=Pinyon+Script&display=swap);
+
+.Head{
+  /* font-family : 'Marck Script', cursive; */
+  /* font-family : 'Petit Formal Script', cursive; */
+  font-family      : 'Pinyon Script', cursive;
+  background-image : url(../imagenes/Hombre.png);
+  background-size  : cover;
+  background-repeat: no-repeat;    
+  height: 300px;
+  z-index: 1 !important;
+  padding: 0;
+  
+}
+
+h1{
+  margin: 2% 3% 0 3%;
+  font-size: 9em;
+}
+p{
+  margin: 0% 3% 0 3%;
+  
+  font-size: 3.3em;
+}
+.iamgen-head{
+  text-align: center;
+}
