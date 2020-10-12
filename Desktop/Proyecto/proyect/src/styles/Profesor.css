@@ -1,0 +1,37 @@
+.Profesor {
+  background-image: url(../imagenes/lampara.png);
+  height: 590px;
+}
+
+.informacion-profesor {
+  margin-left: 150px;
+  color: white;
+  padding-top: 80px;
+}
+
+.Button-profe {
+  left: 250px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
+  width: 260px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 1.7rem;
+    color: white;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.Button-profe {
+  margin: auto;
+
+}
+
+@media screen and (max-width: 312px) {
+  .Button-Task {
+    width: 80%;
+    font-size: 15px;
+  }
+}

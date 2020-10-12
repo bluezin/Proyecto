@@ -1,41 +1,11 @@
-body {
-  width: 93%;
-}
-
-*{
+* {
   box-sizing: border-box;
-	padding   : 0;
-  margin    : 0;
-  overflow: hidden;
-  max-width: 100%;
-  z-index: 1;
+  padding: 0;
+  margin: 0;
 }
-html{
-  font-size: 62.5%;
-}
-body {
- 
-  width: 100%;
-  background-color: #d1d0d0;
-}
-/* .hombre {
-  clip-path: polygon(
-    6% 50%,
-    6% 4%,
-    67% 3%,
-    36% 3%,
-    97% 3%,
-    97% 51%,
-    86% 71%,
-    51% 71%,
-    21% 71%
-  );
-  width: 116%;
 
-  height: 30em;
-  margin-top: -24px;
-  margin-left: -82px;
+body {
+  width: 100%;
+  /* background-image: url(./imagenes/imagen.png); */
+  overflow-x: hidden;
 }
-.hombre-div {
-  text-align: center;
-} */
