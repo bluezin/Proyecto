@@ -1,0 +1,130 @@
+.Login{
+   background-color: #fff;
+   height          : 100vh;
+   width           : 100vw;
+   font-family     : sans-serif;
+   /* font-size: 1rem; */
+}
+form{
+    grid-template-columns: auto auto ;
+    display: flex;
+}
+span{
+    width: 100%;
+}
+ol,li{
+    /* font-size: 1em; */
+    
+}
+.card-leftdivider{
+    /* background: rgb(0,171,206); */
+    /* background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%); */
+    grid-template-columns: auto auto ;
+    display: flex;
+    
+    background-image     : url(../imagenes/fondo-login.svg);
+    background-size      : contain;
+    background-repeat    : no-repeat; 
+    background-attachment: initial;  
+    color                : white; 
+    z-index              : 1000;
+}
+.card-leftdividerFirst{
+    margin    : 2%;
+
+}
+.card-leftdividerSecond{
+    margin-top: 25%;
+}
+.descrption-question{
+    font-size: 1.5em;
+    margin: 0;
+    
+}
+
+.Button {
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: rgb(45, 192, 192);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 14px 49px 14px 49px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 6px rgb(45, 192, 192);
+    cursor: pointer;
+}
+div .MuiAppBar-colorPrimary {
+    color           : #fff;
+    background-color:transparent;
+    margin          : 0 10%;
+}
+div .MuiAppBar-root {
+    width         : 60% ;
+    display       : flex;
+    z-index       : 1100;
+    box-sizing    : border-box;
+    flex-shrink   : 0;
+    flex-direction: column;
+}
+div .MuiTab-root {
+  
+    text-transform: capitalize;
+}
+.MuiFormControl-root {
+    border        : 0;
+    margin        : 2%;
+    display       : inline-flex;
+    padding       : 0;
+    position      : relative;
+    min-width     : 0;
+    flex-direction: column;
+    vertical-align: top;
+    width         : 100%;
+}
+p.MuiTypography-body1 {
+    font-size: 1.65rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+.card-rightdivider{
+    margin: 14% 5%;
+    /* width: 30em; */
+}
+.titleLogin{
+    font-weight: 600;
+    margin: 10% 0;
+    width: 100%;
+    font-size: 2rem;
+}
+.LoginContainer-password{
+    margin: 10% 0;
+    width: 100%;
+}
+.LoginContainer-email{
+    /* align-items: center;
+    text-align: center; */
+    width: 100%;
+}
+
+.forgotLink{
+    font-size : 1em;
+    text-align: end;
+    margin   : 10% 0 2% 1%;
+}
+.DescrptionTextLogin{
+    font-size: 1em;
+}
+.textRegister{
+    font-size: 1em;
+
+}
+.urlPag{
+    /* color    : black;
+    font-size: .5em;
+    margin   : 0 0 2% 1%;
+    text-align: end; */
+}
