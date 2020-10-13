@@ -1,10 +1,21 @@
-import React from 'react'
-import "../styles/Home.css"
+import React from "react";
+import "../styles/Head.css";
+import { Link } from "react-router-dom";
 
-export const Home = () => {
+const Home = () => {
   return (
-    <div className="Home">
-      <h1>Tareas K</h1>
+    <div>
+      <div className="Head">
+        <h1 className="h1">Tu tranquilo,</h1>
+        <h1>Si eres estudiante, te ayudamos a resolver tus tareas</h1>
+        <div className="">
+          <Link to="/alumno">
+            <button className="Button">INGRESAR</button>
+          </Link>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Home;

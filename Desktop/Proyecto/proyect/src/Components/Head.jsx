@@ -1,21 +1,10 @@
-import React from "react";
-import "../styles/Head.css";
-import { Link } from "react-router-dom";
+import React from 'react'
+import "../styles/Home.css"
 
-const Head = () => {
+export const Head = () => {
   return (
-    <div>
-      <div className="Head">
-        <h1 className="h1">Tu tranquilo,</h1>
-        <h1>Si eres estudiante, te ayudamos a resolver tus tareas</h1>
-        <div className="">
-          <Link to="/alumno">
-            <button className="Button">INGRESAR</button>
-          </Link>
-        </div>
-      </div>
+    <div className="Home">
+      <h1>Tareas K</h1>
     </div>
-  );
-};
-
-export default Head;
+  )
+}
