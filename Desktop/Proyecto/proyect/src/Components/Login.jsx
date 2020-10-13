@@ -100,28 +100,10 @@ const Login = () => {
               </p>
             </div>
             <div>
-              {/* <div>
-                  <button className="Button" type="button" onClick={handleClick}>Estudiante</button>
-                  <button className="Button" type="button" onClick={handleClicker}>Estudiante</button>
-                </div>
-                <div>
-                  {bandera ? 
-                    <SimpleList className="descrption-text" list={arrayTeacherDescription} />:
-                    <SimpleList className="descrption-text" list={arrayStudentDescription} />
-                  }
-
-                </div> */}
-
-              <AppBar position="static">
-                <Tabs
-                  value={value}
-                  onChange={handleChangeST}
-                  aria-label="simple tabs example"
-                >
-                  <Tab label="Profesor" onClick={handleProfesor} />
-                  <Tab label="Estudiante" onClick={handleEstudiante} />
-                </Tabs>
-              </AppBar>
+              <div>
+                  <button className="Button" type="button" onClick={handleProfesor}>Profesor</button>
+                  <button className="Button" type="button" onClick={handleEstudiante}>Estudiante</button>
+              </div>
               {booleano
                 ? arrayTeacher.map((item, index) => {
                     return <p key={index}>{item}</p>;
@@ -129,25 +111,6 @@ const Login = () => {
                 : arrayEstudent.map((item, index) => {
                     return <p key={index}>{item}</p>;
                   })}
-
-              {/* <TabPanel value={value} index={0}>
-                <Typography className="descrption-question">
-                  ¿Qué puedo hacer en la sección de docentes?
-                </Typography>
-                <SimpleList
-                  className="descrption-text"
-                  list={arrayTeacherDescription}
-                />
-              </TabPanel>
-              <TabPanel value={value} index={1}>
-                <Typography className="descrption-question">
-                  ¿Qué puedo hacer en la sección de Estudiantes?
-                </Typography>
-                <SimpleList
-                  className="descrption-text"
-                  list={arrayStudentDescription}
-                />
-              </TabPanel> */}
             </div>
 
             <div className="urlPag">
