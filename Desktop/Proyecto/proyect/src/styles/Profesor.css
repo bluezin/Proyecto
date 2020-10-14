@@ -1,6 +1,8 @@
 .Profesor {
   background-image: url(../imagenes/lampara.png);
-  height: 590px;
+  height: 100vh;
+  background-repeat    : no-repeat; 
+  background-attachment: initial;  
 }
 
 .informacion-profesor {

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Task.css";
+
 import student from "../imagenes/student.png";
 import poligono from "../imagenes/poligono.png";
 import { Link } from "react-router-dom";
@@ -26,7 +27,7 @@ const Task = () => {
           <p className="student-parrafo">Alumno</p>
         </div>
         <div className="Button-div">
-          <Link to="/profesor">
+          <Link to="/login">
             <button className="Button-Task">INGRESAR</button>
           </Link>
         </div>

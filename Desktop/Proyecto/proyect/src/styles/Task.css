@@ -5,8 +5,11 @@
 }
 .Task {
   background-image: url(../imagenes/laptop.png);
-  /* height: 590px; */
-  height: 515px;
+  background-size      : contain;
+  background-repeat    : no-repeat; 
+  background-attachment: initial;   
+  height: 100vh;
+  /* height: 515px; */
 
   /* margin-top: 50px; */
 }

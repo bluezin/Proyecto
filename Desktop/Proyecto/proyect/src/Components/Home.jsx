@@ -9,7 +9,7 @@ const Home = () => {
         <h1 className="h1">Tu tranquilo,</h1>
         <h1>Si eres estudiante, te ayudamos a resolver tus tareas</h1>
         <div className="">
-          <Link to="/alumno">
+          <Link to="/login">
             <button className="Button">INGRESAR</button>
           </Link>
         </div>
