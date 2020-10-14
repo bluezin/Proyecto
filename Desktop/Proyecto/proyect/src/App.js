@@ -7,19 +7,27 @@ import Task from "../src/Components/Task";
 import Profesor from "../src/Components/Profesor";
 
 function App() {
+  const properties = {
+    duration: 5000,
+    transitionDuration: 800,
+    arrows: true
+  }
+  
   return (
     <div className="App">
-      <Slide easing="ease">
-        <div className="each-slide">
+      <Slide {...properties} easing="ease" className="SOLID">
+        <div className="each-slide" >
           <Home />
         </div>
         <div className="each-slide">
-            <Task />
+          <Task />
         </div>
         <div className="each-slide">
           <Profesor />
         </div>
       </Slide>
+          {/* <Home /> */}
+
     </div>
   );
 }

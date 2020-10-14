@@ -1,62 +1,65 @@
 .Home {
-  background-color: rgb(102, 106, 117);
-  padding: 6px;
+  text-align: center;
   color: white;
+  background-image: url(../imagenes/imagen.png);
+  height: 440px;
 
 }
+.h1 {
+  padding-top: 110px;
+}
+.Button-Home {
+  left: 250px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
+  border-radius: 20px;
+  width: 260px;
+  padding: 10px;
+  font-size: 1.7rem;
+  margin-top: 59px;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+}
 
-/*SECTION RESPONSIVE */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .Home {
-    /* background-color: rgb(102, 106, 117); */
-    padding: 6px;
-    color: white;
-    background-color: rgba(0,171,206,1) ;
-  
+@media screen and (max-width: 312px) {
+  .Button {
+    width: 80%;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 865px) {
+  .h1 {
+    margin-right: 640px;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media screen and (max-width: 300px) {
   .Home {
-    /* background-color: rgb(102, 106, 117); */
-    padding: 6px;
-    color: white;
-    background-color: rgba(0,171,206,1) ;
-  
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .Home {
-    background-color: rgb(102, 106, 117);
-    padding: 6px;
-    color: white;
-  
+    font-size: 10px;
   }
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+
+@media screen and (min-width: 1125px) {
   .Home {
-    background-color: rgb(102, 106, 117);
-    padding: 6px;
-    color: white;
-  
+    height: 440px;
+
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+@media screen and (max-width: 1125px) {
   .Home {
-    background-color: rgb(102, 106, 117);
-    padding: 6px;
-    color: white;
-  
-  }
+    height: 590px;
 
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .Button{
+    margin-top: 160px;
+  }
 }

@@ -6,16 +6,17 @@ import mail from "../imagenes/icons-mail.png";
 import user from "../imagenes/icons-user.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
-import Button from '@material-ui/core/Button';
+import PropTypes from "prop-types";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-
 
 // import Typography from "@material-ui/core/Typography";
 
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox";
 import TextField from "@material-ui/core/TextField";
-
 
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
@@ -75,6 +76,20 @@ const Login = () => {
               </p>
             </div> */}
             <div>
+              <button
+                className="Button-login"
+                type="button"
+                onClick={handleProfesor}
+              >
+                Profesor
+              </button>
+              <button
+                className="Button-login"
+                type="button"
+                onClick={handleEstudiante}
+              >
+                Estudiante
+              </button>
               <div className="card-sectionTextClass">
                 {booleano
                   ? arrayTeacher.map((item, index) => {
@@ -120,14 +135,28 @@ const Login = () => {
                   required
                 />
               </div>
-              <div className="login-fogiveme">
-                <FormControlLabel
-                    control      = {
+              <div className="LoginContainer">
+                <div className="LoginContainer-email">
+                  <img src={mail} alt="mail" className="mail" />
+                  <TextField id="email" label="Correo" type="email" required />
+                </div>
+                <div className="LoginContainer-password">
+                  <img src={candado} alt="candado" className="candado" />
+                  <TextField
+                    id="pswd"
+                    label="Contraseña"
+                    type="password"
+                    required
+                  />
+                </div>
+                <div className="login-fogiveme">
+                  <FormControlLabel
+                    control={
                       <Checkbox
-                        checked  = {state.checkedB}
-                        onChange = {handleChangeChk}
-                        name     = "checkedB"
-                        color    = "primary"
+                        checked={state.checkedB}
+                        onChange={handleChangeChk}
+                        name="checkedB"
+                        color="primary"
                       />
                     }
                     label        = "Recuerdame"
@@ -145,14 +174,12 @@ const Login = () => {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
 
 export default Login;
-
-

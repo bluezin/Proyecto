@@ -1,28 +1,28 @@
 import React from "react";
-import poligono from "../imagenes/poligono.png";
+// import poligono from "../imagenes/poligono.png";
 import profesor from "../imagenes/profesor.png";
 import "../styles/Profesor.css";
+import { Link } from "react-router-dom";
 
 const Profesor = () => {
   return (
     <div className="Profesor">
-      <div className="div-imagen">
-        <img src={poligono} alt="poligono" className="poligono" />
-        <img src={profesor} alt="" className="imagen-profesor" />
-        <p className="profesor-parrafo">Profesor</p>
-      </div>
       <div className="informacion-profesor">
-        <h1>Como ganar dinero extra en 6 pasos</h1>
-        <p>Reviso las tareas</p>
-        <p>Selecciono al estudiante que quiero ayudar</p>
-        <p>Ofresco mi tarifa</p>
-        <p>Ayudo en la tarea</p>
-        <p>La entrego</p>
-        <p>Recibo el pago de mis servicios</p>
+        <h1 className="como">Como ganar dinero extra en 6 pasos</h1>
+        <li className="profe-p">Reviso las tareas</li>
+        <li className="profe-p">Selecciono al estudiante que quiero ayudar</li>
+        <li className="profe-p">Ofresco mi tarifa</li>
+        <li className="profe-p">Ayudo en la tarea</li>
+        <li className="profe-p">La entrego</li>
+        <li className="profe-p">Recibo el pago de mis servicios</li>
       </div>
-
-      <div className="Button-profe">
-        <button className="Button-profe">INGRESAR</button>
+      <div className="div-imagen">
+        <img src={profesor} alt="" className="imagen-profesor" />
+      </div>
+      <div className="Button-profesor">
+        <Link to="/login">
+          <button className="Button-profe">INGRESAR</button>
+        </Link>
       </div>
     </div>
   );
