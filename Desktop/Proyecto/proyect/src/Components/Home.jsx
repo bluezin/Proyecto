@@ -10,7 +10,7 @@ const Home = () => {
         <h1>Si eres estudiante, te ayudamos a resolver tus tareas</h1>
         <div className="">
           <Link to="/login">
-            <button className="Button">INGRESAR</button>
+            <button className="Button-Home">INGRESAR</button>
           </Link>
         </div>
       </div>

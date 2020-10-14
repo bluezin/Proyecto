@@ -2,7 +2,6 @@
 .Login{
     font-family: 'Open Sans', sans-serif;
 }
-<<<<<<< HEAD
 form{
     grid-template-columns: auto auto ;
     display: flex;
@@ -11,7 +10,6 @@ span{
     width: 100%;
 }
 
-=======
 .ButtonClass {
     margin          : 2%;
     font-size       : 15px;
@@ -25,7 +23,6 @@ span{
     box-shadow      : 0 0 6px rgb(45, 192, 192);
     cursor          : pointer;
 }
->>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 .card-leftdivider{
     background: rgb(0,171,206);
     background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
@@ -50,7 +47,6 @@ span{
 #email-label{
     padding: 3% 14%;
 }
-<<<<<<< HEAD
 
 .Button-login {
     margin-top: 20px;
@@ -99,10 +95,9 @@ p.MuiTypography-body1 {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.00938em;
-=======
+}
 #email{
     padding: 3% 14%;
->>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 }
 #pswd{
     padding: 3% 14%;
@@ -336,7 +331,6 @@ margin    : 2%;
         display              : flex;
         position             : relative;
     }
-        display   : none;
 
     .card-leftdivider{
          background           : rgb(0,171,206);

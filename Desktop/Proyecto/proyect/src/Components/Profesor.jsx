@@ -17,9 +17,7 @@ const Profesor = () => {
         <li className="profe-p">Recibo el pago de mis servicios</li>
       </div>
       <div className="div-imagen">
-        {/* <img src={poligono} alt="poligono" className="poligono" /> */}
         <img src={profesor} alt="" className="imagen-profesor" />
-        {/* <p className="profesor-parrafo">Profesor</p> */}
       </div>
       <div className="Button-profesor">
         <Link to="/login">

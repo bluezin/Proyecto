@@ -1,13 +1,7 @@
 import React from "react";
 import "../styles/Task.css";
-<<<<<<< HEAD
 import student from "../imagenes/estudiante.png";
-// import poligono from "../imagenes/poligono.png";
-=======
 
-import student from "../imagenes/student.png";
-import poligono from "../imagenes/poligono.png";
->>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 import { Link } from "react-router-dom";
 
 const Task = () => {
@@ -24,8 +18,6 @@ const Task = () => {
           <li className="profe-p">Entrego mi tarea y disfruto de mi tiempo libre</li>
         </div>
         <div className="div-student">
-          {/* <img src={poligono} alt="poligono" className="poligono" /> */}
-          {/* <p className="student-parrafo">Alumno</p> */}
           <img src={student} alt="student" className="student" />
         </div>
 

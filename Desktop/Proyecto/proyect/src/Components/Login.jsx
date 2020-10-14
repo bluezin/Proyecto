@@ -5,30 +5,18 @@ import candado from "../imagenes/icon-candado.png";
 import mail from "../imagenes/icons-mail.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
-<<<<<<< HEAD
 import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import TextField from "@material-ui/core/TextField";
-=======
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
->>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
-
 
 // import Typography from "@material-ui/core/Typography";
 
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox";
 import TextField from "@material-ui/core/TextField";
 
-
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
   const handleProfesor = () => {
@@ -69,34 +57,46 @@ const Login = () => {
     checkedB: true,
   });
 
-<<<<<<< HEAD
-
-  
-=======
   const handleChangeChk = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
->>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
   return (
     <div className="Login">
-      <form>
-        <div className="card-leftdivider">
-          <div className="card-leftdividerFirst">
-            <div className="card-sectionButtonClass">
-                <button className="ButtonClass" type="button" onClick={handleProfesor}>Profesor</button>
-                <button className="ButtonClass" type="button" onClick={handleEstudiante}>Estudiante</button>
-            </div>
-            {/* <div className="bolcklogo">
-              <p>
-                <img src={logo} alt="logo" className="logo" />
-              </p>
-            </div> */}
+      <div className="card-leftdivider">
+        <div className="card-leftdividerFirst">
+          <div className="card-sectionButtonClass">
+            <button
+              className="ButtonClass"
+              type="button"
+              onClick={handleProfesor}
+            >
+              Profesor
+            </button>
+            <button
+              className="ButtonClass"
+              type="button"
+              onClick={handleEstudiante}
+            >
+              Estudiante
+            </button>
+          </div>
+
+          <div>
             <div>
-<<<<<<< HEAD
-              <div>
-                  <button className="Button-login" type="button" onClick={handleProfesor}>Profesor</button>
-                  <button className="Button-login" type="button" onClick={handleEstudiante}>Estudiante</button>
-=======
+              <button
+                className="Button-login"
+                type="button"
+                onClick={handleProfesor}
+              >
+                Profesor
+              </button>
+              <button
+                className="Button-login"
+                type="button"
+                onClick={handleEstudiante}
+              >
+                Estudiante
+              </button>
               <div className="card-sectionTextClass">
                 {booleano
                   ? arrayTeacher.map((item, index) => {
@@ -105,7 +105,6 @@ const Login = () => {
                   : arrayEstudent.map((item, index) => {
                       return <p key={index}>{item}</p>;
                     })}
->>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
               </div>
             </div>
 
@@ -122,60 +121,58 @@ const Login = () => {
             )}
           </div>
         </div>
-
-        <div className="card-rightdivider">
-          
-          <div className="card-loginForm">
-            <div>
-              <p className="titleLogin">Iniciar sesión</p>
-            </div>
-            <div className="LoginContainer">
-              <div className="LoginContainer-email">
-                <img src={mail} alt="mail" className="mail" />
-                <TextField id="email" label="Correo" type="email" required />
+        <form>
+          <div className="card-rightdivider">
+            <div className="card-loginForm">
+              <div>
+                <p className="titleLogin">Iniciar sesión</p>
               </div>
-              <div className="LoginContainer-password">
-                <img src={candado} alt="candado" className="candado" />
-                <TextField
-                  id="pswd"
-                  label="Contraseña"
-                  type="password"
-                  required
-                />
-              </div>
-              <div className="login-fogiveme">
-                <FormControlLabel
-                    control      = {
+              <div className="LoginContainer">
+                <div className="LoginContainer-email">
+                  <img src={mail} alt="mail" className="mail" />
+                  <TextField id="email" label="Correo" type="email" required />
+                </div>
+                <div className="LoginContainer-password">
+                  <img src={candado} alt="candado" className="candado" />
+                  <TextField
+                    id="pswd"
+                    label="Contraseña"
+                    type="password"
+                    required
+                  />
+                </div>
+                <div className="login-fogiveme">
+                  <FormControlLabel
+                    control={
                       <Checkbox
-                        checked  = {state.checkedB}
-                        onChange = {handleChangeChk}
-                        name     = "checkedB"
-                        color    = "primary"
+                        checked={state.checkedB}
+                        onChange={handleChangeChk}
+                        name="checkedB"
+                        color="primary"
                       />
                     }
-                    label        = "Recuerdame"
-                />
-                <p className="forgotLink">olvidé mi contraseña</p>
-              </div>
-              <div>
-                <button className="Button">Ingresar</button>
-              </div>
-              <div className="textRegister">
-                <p>
-                  No tengo cuenta
-                  <Button color="primary" onClick={handleForm}><b> Registrame</b></Button>
-                  
-                </p>
+                    label="Recuerdame"
+                  />
+                  <p className="forgotLink">olvidé mi contraseña</p>
+                </div>
+                <div>
+                  <button className="Button">Ingresar</button>
+                </div>
+                <div className="textRegister">
+                  <p>
+                    No tengo cuenta
+                    <Button color="primary" onClick={handleForm}>
+                      <b> Registrame</b>
+                    </Button>
+                  </p>
+                </div>
               </div>
             </div>
-
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
 
 export default Login;
-
-
