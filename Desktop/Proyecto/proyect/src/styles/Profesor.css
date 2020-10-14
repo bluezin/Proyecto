@@ -3,7 +3,6 @@
 }
 .profe-p{
   list-style: circle;
-  
 }
 
 .informacion-profesor {
@@ -33,7 +32,7 @@
 @media screen and (min-width: 1125px) {
   .Button-profesor {
     text-align: center;
-    /* margin-top: -250px; */
+    margin-top: -250px;
   }
   .Profesor {
     height: 440px;
