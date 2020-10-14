@@ -1,10 +1,11 @@
 import React from 'react'
-import "../styles/Home.css"
+import "../styles/Head.css"
+import logotipo from "../imagenes/logotipo.png"
 
 export const Head = () => {
   return (
-    <div className="Home">
-      <h1>Tareas K</h1>
+    <div className="Head">
+      <img src={logotipo} className="logotipo" alt="" />
     </div>
   )
 }

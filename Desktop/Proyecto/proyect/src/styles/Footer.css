@@ -1,12 +1,19 @@
+
 .Footer {
-  background-color: rgb(102, 106, 117);
+  background-color: rgb(145, 156, 190);
   padding: 23px;
-  /* margin-top: -64px; */
+  font-family: monospace;
+
 }
 
 .footer-p {
   font-family: monospace;
   font-size: 15px;
+  color: white;
+}
+
+.logo {
+  width: 10px;
   color: white;
 }
 
@@ -24,11 +31,10 @@
 @media screen and (max-width: 611px) {
   .footer-tareas {
     color: white;
-
     margin-top: 10px;
     font-size: 15px;
   }
-  .Footer{
+  .Footer {
     text-align: center;
   }
 }

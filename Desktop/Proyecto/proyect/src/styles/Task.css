@@ -1,25 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
 
-* {
-  z-index: 1;
-}
 .Task {
   background-image: url(../imagenes/laptop.png);
-  /* height: 590px; */
-  height: 515px;
+  
+}
 
-  /* margin-top: 50px; */
-}
-.div-imagen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.div-imagen {
-  right: 0;
-  position: absolute;
-  top: 20px;
-}
+
+
 .Button-Task {
   left: 250px;
   border: none;
@@ -29,7 +16,7 @@
   border-radius: 20px;
   width: 260px;
   padding: 10px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-top: 59px;
   color: white;
   font-weight: bold;
@@ -39,39 +26,6 @@
   text-align: center;
 }
 
-.imagen-profesor {
-  position: absolute;
-  margin-top: -29px;
-  margin-left: 7px;
-  width: 120px;
-}
-.profesor-parrafo {
-  position: absolute;
-  margin-top: 46px;
-  margin-left: 7px;
-  font-family: "Rajdhani", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-.student-parrafo {
-  position: absolute;
-  margin-left: 7px;
-  margin-top: 49px;
-  font-family: "Rajdhani", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-.student {
-  position: absolute;
-  margin-top: -19px;
-  margin-left: 7px;
-  width: 8%;
-  width: 120px;
-}
-
-.poligono {
-  width: 360px;
-}
 .lista {
   margin-left: 150px;
   color: white;
@@ -80,7 +34,6 @@
 
 @media screen and (min-width: 715px) {
   .informacion {
-    /* margin-top: 50px; */
     margin-left: 150px;
     color: white;
     padding-top: 80px;
@@ -94,55 +47,63 @@
     padding-top: 80px;
     text-align: center;
   }
-
 }
 @media screen and (max-width: 573px) {
-.lista{
-  margin-left: 30px;
+  .lista {
+    margin-left: 30px;
+  }
 }
 
+
+@media screen and (min-width: 1125px) {
+  .div-student {
+    position: relative;
+    top: -300px;
+    left: 1000px;
+  }
+
+  .student{
+    width: 330px;
+  }
+  .Task {
+    height: 440px;
+  }
 }
 
-@media screen and (max-width: 312px) {
-  .Button-Task {
-    width: 80%;
-    font-size: 15px;
+@media screen and (max-width: 1125px) {
+
+  .Task {
+    height: 590px;
+
+  }
+
+  .div-student {
+    text-align: center;
+    margin-top: -50px;
+  }
+  .student{
+    width: 330px;
   }
   .Button-div{
+    text-align: center;
+    margin-top: -120px;
+  
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .Button-Task {
+    width: 50%;
+    font-size: 15px;
+  }
+  .Button-div {
     margin-bottom: 100px;
   }
-}
-
-/* 
-@media screen and (max-width: 324px) {
-.poligono{
-  width: 120%;
-}
-.student{
-  width: 34%;
-}
-.imagen-profesor{
-  width: 38%;
-}
-.profesor-parrafo{
-  font-size: 16px;
-}
-.student-parrafo{
-  font-size: 16px;
-}
-.sabes{
-  margin-top: 40px;
-}
-
-
-}
-@media screen and (max-width: 258px) {
-  .student-parrafo {
-    font-size: 0.7rem;
+  .student {
+    width: 60%;
+    margin-bottom: 36px;
   }
-  .profesor-parrafo {
-    font-size: 0.7rem;
-
+  .div-student{
+    margin-top: 1px;
   }
- 
-} */
+}

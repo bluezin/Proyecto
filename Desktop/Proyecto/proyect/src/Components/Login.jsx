@@ -4,12 +4,7 @@ import logo from "../imagenes/logotipo.png";
 import profe from "../imagenes/profesor.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
-// import children from "../imagenes/fondo-login.svg";
-// import Button from "./Button";
 import PropTypes from "prop-types";
-import AppBar from "@material-ui/core/AppBar";
-import Tab from "@material-ui/core/Tab";
-import Tabs from "@material-ui/core/Tabs";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
@@ -40,20 +35,9 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  };
-}
 
-const SimpleList = ({ list }) => (
-  <ol>
-    {list.map((item) => (
-      <li key={item}>{item}</li>
-    ))}
-  </ol>
-);
+
+
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
   const handleProfesor = () => {
@@ -83,12 +67,8 @@ const Login = () => {
     " 6. Entrego mi tarea y disfruto de mi tiempo libre.",
   ];
 
-  const [value, setValue] = React.useState(0);
 
-  const handleChangeST = (event, newValue) => {
-    setValue(newValue);
-  };
-
+  
   return (
     <div className="Login">
       <form>
@@ -101,8 +81,8 @@ const Login = () => {
             </div>
             <div>
               <div>
-                  <button className="Button" type="button" onClick={handleProfesor}>Profesor</button>
-                  <button className="Button" type="button" onClick={handleEstudiante}>Estudiante</button>
+                  <button className="Button-login" type="button" onClick={handleProfesor}>Profesor</button>
+                  <button className="Button-login" type="button" onClick={handleEstudiante}>Estudiante</button>
               </div>
               {booleano
                 ? arrayTeacher.map((item, index) => {
