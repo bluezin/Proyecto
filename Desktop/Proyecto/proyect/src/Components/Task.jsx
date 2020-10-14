@@ -1,7 +1,13 @@
 import React from "react";
 import "../styles/Task.css";
+<<<<<<< HEAD
 import student from "../imagenes/estudiante.png";
 // import poligono from "../imagenes/poligono.png";
+=======
+
+import student from "../imagenes/student.png";
+import poligono from "../imagenes/poligono.png";
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 import { Link } from "react-router-dom";
 
 const Task = () => {

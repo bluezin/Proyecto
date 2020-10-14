@@ -1,8 +1,14 @@
 .Profesor {
   background-image: url(../imagenes/lampara.png);
+<<<<<<< HEAD
 }
 .profe-p{
   list-style: circle;
+=======
+  height: 100vh;
+  background-repeat    : no-repeat; 
+  background-attachment: initial;  
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 }
 
 .informacion-profesor {

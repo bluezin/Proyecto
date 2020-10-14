@@ -2,7 +2,27 @@
 
 .Task {
   background-image: url(../imagenes/laptop.png);
+<<<<<<< HEAD
   
+=======
+  background-size      : contain;
+  background-repeat    : no-repeat; 
+  background-attachment: initial;   
+  height: 100vh;
+  /* height: 515px; */
+
+  /* margin-top: 50px; */
+}
+.div-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-imagen {
+  right: 0;
+  position: absolute;
+  top: 20px;
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 }
 
 

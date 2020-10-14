@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 .Login{
-   background-color: #fff;
-   height          : 100vh;
-   width           : 100vw;
-   font-family     : sans-serif;
-   /* font-size: 1rem; */
+    font-family: 'Open Sans', sans-serif;
 }
+<<<<<<< HEAD
 form{
     grid-template-columns: auto auto ;
     display: flex;
@@ -13,31 +11,46 @@ span{
     width: 100%;
 }
 
-.card-leftdivider{
-    /* background: rgb(0,171,206); */
-    /* background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%); */
-    grid-template-columns: auto auto ;
-    display: flex;
-    
-    background-image     : url(../imagenes/fondo-login.svg);
-    background-size      : contain;
-    background-repeat    : no-repeat; 
-    background-attachment: initial;  
-    color                : white; 
-    z-index              : 1000;
+=======
+.ButtonClass {
+    margin          : 2%;
+    font-size       : 15px;
+    background-color: transparent;
+    outline         : none;
+    border          : 2px solid white;
+    border-radius   : 1%;
+    padding         : .51em 1.5em;
+    font-weight     : bold;
+    color           : white;
+    box-shadow      : 0 0 6px rgb(45, 192, 192);
+    cursor          : pointer;
 }
-.card-leftdividerFirst{
-    margin    : 2%;
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
+.card-leftdivider{
+    background: rgb(0,171,206);
+    background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+    color     : white; 
+    display   : none;
+} 
+
+.card-rightdivider{
+    margin: 0% 11%;
+}
+
+.titleLogin{
+    font-weight: 600;
+    margin     : 4% 0;
+    width      : 100%;
+    font-size  : 2rem;
+}
+.LoginContainer{
+    margin: 10% 0;
 
 }
-.card-leftdividerSecond{
-    margin-top: 25%;
+#email-label{
+    padding: 3% 14%;
 }
-.descrption-question{
-    font-size: 1.5em;
-    margin: 0;
-    
-}
+<<<<<<< HEAD
 
 .Button-login {
     margin-top: 20px;
@@ -86,42 +99,276 @@ p.MuiTypography-body1 {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.00938em;
+=======
+#email{
+    padding: 3% 14%;
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 }
-.card-rightdivider{
-    margin: 14% 5%;
-    /* width: 30em; */
+#pswd{
+    padding: 3% 14%;
 }
-.titleLogin{
-    font-weight: 600;
-    margin: 10% 0;
-    width: 100%;
-    font-size: 2rem;
+#pswd-label{
+    padding: 3% 14%;
+
 }
 .LoginContainer-password{
     margin: 10% 0;
-    width: 100%;
+    width : 100%;
+}
+.mail{
+    display: flex;
+    margin: 0 0 -15% 0;
 }
 .LoginContainer-email{
-    /* align-items: center;
-    text-align: center; */
     width: 100%;
+    align-items: center;
+}
+.candado{
+    display: flex;
+    margin: 0 0 -15% 0;
+}
+
+span.MuiIconButton-root {
+    flex     : 0;
+    font-size: 0.8 1em;
+}
+.MuiTypography-body1 {
+    font-size: 0.81em;
+    
+}
+.login-fogiveme{
+    display: flex;
 }
 
 .forgotLink{
-    font-size : 1em;
+    font-size : 0.81em;
     text-align: end;
-    margin   : 10% 0 2% 1%;
+    margin    : 5% 0 0% 0%;
 }
 .DescrptionTextLogin{
     font-size: 1em;
 }
 .textRegister{
     font-size: 1em;
+    text-align: center;
+    
+}
+
+.imagen{
+    width   : 37%;
+    position: absolute;
+    bottom  :  20%;
+}
+button.Button {
+    margin-top   : 12%;
+    font-size    : 1rem;
+    background   : rgb(0,171,206);
+    background   : linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+    outline      : none;
+    border       : none;
+    border-radius: 15px;
+    padding      : 4% 2%;
+    font-weight  : bold;
+    color        : white;
+    box-shadow   : 0 0 6px rgb(45, 192, 192);
+    cursor       : pointer;
+    width        : 90%;
+    font-family  : sans-serif;
+}
+
+/* grid-template-columns: 3fr 1fr 1fr ; */
+/* 
+form{
+    display              : flex;
+    position             : relative;
+}
+.card-leftdivider{
+     background           : rgb(0,171,206);
+     background           : linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+     grid-template-columns: 3fr 1 ;
+     display              : flex;
+     color                : white; 
+} 
+.card-leftdividerFirst{
+margin    : 2%;
+
+} 
+*/
+/* span{
+   width: 100%;
+} */
+
+/* .Login{
+    background-color: #fff;
+    height          : 100%;
+    width           : 100%;
+    font-family     : sans-serif;
+}
+*/
+    
+    /* background-image     : url(../imagenes/fondo-login.svg);
+    background-size      : contain;
+    background-repeat    : no-repeat; 
+    background-attachment: initial;   */
+
+
+    /* 
+.card-sectionButtonClass{
+    display              : flex;
+    grid-template-columns: auto auto ;
 
 }
-.urlPag{
-    /* color    : black;
-    font-size: .5em;
-    margin   : 0 0 2% 1%;
-    text-align: end; */
-}
+ .card-leftdividerSecond{
+     margin: 25% 0;
+ }
+ .descrption-question{
+     font-size: 1.5em;
+     margin   : 0;
+ }
+ 
+
+
+ .card-sectionTextClass{
+     margin: 2%;
+ }
+ 
+
+*/
+    /* SECTION esta es la sección de el responsive*/
+ 
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        .Login{
+            margin: 0 14% 0 0%; 
+        }
+        .titleLogin{
+            font-weight: 600;
+            margin     : 3% 0;
+            width      : 100%;
+            font-size  : 1.5rem;
+        }
+        .card-loginForm{
+            margin: 0 0 0 7%;
+        }
+       
+ }
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .Login{
+        margin: 0 14% 0 0%; 
+    }
+    .titleLogin{
+        font-weight: 600;
+        margin     : 3% 0;
+        width      : 100%;
+        font-size  : 1.5rem;
+    }
+    .card-loginForm{
+        margin: 0 0 0 7%;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .Login{
+        margin: 0 14% 0 0%; 
+    }
+    .titleLogin{
+        font-weight: 600;
+        margin     : 3% 0;
+        width      : 100%;
+        font-size  : 1.5rem;
+    }
+    .card-loginForm{
+        margin: 0 0 0 7%;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  
+    form{
+        display              : flex;
+        position             : relative;
+    }
+    .card-leftdivider{
+        background: rgb(0,171,206);
+        background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+        color     : white; 
+        display   : flex;
+    } 
+    .card-sectionButtonClass{
+        display              : flex;
+        grid-template-columns: auto auto ;
+    
+    }
+     .card-leftdividerSecond{
+         margin: 25% 0;
+     }
+     .descrption-question{
+         font-size: 1.5em;
+         margin   : 0;
+     }
+     
+    
+    
+     .card-sectionTextClass{
+         margin: 2%;
+     }
+     
+    /* .card-leftdivider{
+         background           : rgb(0,171,206);
+         background           : linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+         grid-template-columns: 3fr 1 ;
+         display              : flex;
+         color                : white; 
+    } 
+    .card-leftdividerFirst{
+        margin    : 2%;
+    
+    }  */
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    form{
+        display              : flex;
+        position             : relative;
+    }
+        display   : none;
+
+    .card-leftdivider{
+         background           : rgb(0,171,206);
+         background           : linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+         grid-template-columns: 3fr 1 ;
+         display              : flex;
+         color                : white; 
+    } 
+    .card-leftdividerFirst{
+        margin    : 2%;
+    
+    } 
+    .card-sectionButtonClass{
+        display              : flex;
+        grid-template-columns: auto auto ;
+    
+    }
+     .card-leftdividerSecond{
+         margin: 25% 0;
+     }
+     .descrption-question{
+         font-size: 1.5em;
+         margin   : 0;
+     }
+     
+    
+    
+     .card-sectionTextClass{
+         margin: 2%;
+     }
+     
+ 
+ }
+ 
+ 

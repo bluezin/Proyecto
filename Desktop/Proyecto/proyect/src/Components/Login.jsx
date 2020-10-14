@@ -1,43 +1,34 @@
 import React, { useState } from "react";
 import "../styles/Login.css";
-import logo from "../imagenes/logotipo.png";
 import profe from "../imagenes/profesor.png";
+import candado from "../imagenes/icon-candado.png";
+import mail from "../imagenes/icons-mail.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
+<<<<<<< HEAD
 import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
+=======
+import Button from '@material-ui/core/Button';
+import { Link } from "react-router-dom";
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
 
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
+// import Typography from "@material-ui/core/Typography";
 
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import TextField from "@material-ui/core/TextField";
+
+
+<<<<<<< HEAD
 
 
 
-
+=======
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
   const handleProfesor = () => {
@@ -45,7 +36,14 @@ const Login = () => {
 
     console.log(booleano);
   };
+  const [formActivator, setFormActivator] = useState(true);
+  const handleForm = () => {
+    setFormActivator(true);
+
+    console.log(booleano);
+  };
   const arrayTeacher = [
+    " ¿ Qué puedo hacer como Profesor?",
     " 1. Selecciono las asignaturas.",
     " 2. Veo las tareas.",
     " 3. Las organizo a mi preferencia.",
@@ -59,6 +57,7 @@ const Login = () => {
     console.log(booleano);
   };
   const arrayEstudent = [
+    " ¿ Qué puedo hacer como Estudiante?",
     " 1. Selecciono mi tarea.",
     " 2. la selecciono y lleno el formulario.",
     " 3. Busco la persona que quiero que me ayude.",
@@ -66,35 +65,52 @@ const Login = () => {
     " 5. Selecciono la que se ajuste a mi bolsillo y a mi nivel educativo.",
     " 6. Entrego mi tarea y disfruto de mi tiempo libre.",
   ];
+  const [state, setState] = React.useState({
+    checkedB: true,
+  });
 
+<<<<<<< HEAD
 
   
+=======
+  const handleChangeChk = (event) => {
+    setState({ ...state, [event.target.name]: event.target.checked });
+  };
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
   return (
     <div className="Login">
       <form>
         <div className="card-leftdivider">
           <div className="card-leftdividerFirst">
-            <div className="bolcklogo">
-              <p>
-                <img src={logo} alt="logo" className="logo" />{" "}
-              </p>
+            <div className="card-sectionButtonClass">
+                <button className="ButtonClass" type="button" onClick={handleProfesor}>Profesor</button>
+                <button className="ButtonClass" type="button" onClick={handleEstudiante}>Estudiante</button>
             </div>
+            {/* <div className="bolcklogo">
+              <p>
+                <img src={logo} alt="logo" className="logo" />
+              </p>
+            </div> */}
             <div>
+<<<<<<< HEAD
               <div>
                   <button className="Button-login" type="button" onClick={handleProfesor}>Profesor</button>
                   <button className="Button-login" type="button" onClick={handleEstudiante}>Estudiante</button>
+=======
+              <div className="card-sectionTextClass">
+                {booleano
+                  ? arrayTeacher.map((item, index) => {
+                      return <p key={index}>{item}</p>;
+                    })
+                  : arrayEstudent.map((item, index) => {
+                      return <p key={index}>{item}</p>;
+                    })}
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
               </div>
-              {booleano
-                ? arrayTeacher.map((item, index) => {
-                    return <p key={index}>{item}</p>;
-                  })
-                : arrayEstudent.map((item, index) => {
-                    return <p key={index}>{item}</p>;
-                  })}
             </div>
 
             <div className="urlPag">
-              <img src={children} alt="logo" className="logo" />
+              <img src={children} alt="logo" className="imagen" />
             </div>
           </div>
 
@@ -108,33 +124,51 @@ const Login = () => {
         </div>
 
         <div className="card-rightdivider">
-          <div>
-            <p className="titleLogin">Iniciar sesión</p>
-          </div>
-          <div className="LoginContainer">
-            <div className="LoginContainer-email">
-              <TextField id="email" label="Correo" type="email" required />
+          
+          <div className="card-loginForm">
+            <div>
+              <p className="titleLogin">Iniciar sesión</p>
             </div>
-            <div className="LoginContainer-password">
-              <TextField
-                id="pswd"
-                label="Contraseña"
-                type="password"
-                required
-              />
-              <div>
+            <div className="LoginContainer">
+              <div className="LoginContainer-email">
+                <img src={mail} alt="mail" className="mail" />
+                <TextField id="email" label="Correo" type="email" required />
+              </div>
+              <div className="LoginContainer-password">
+                <img src={candado} alt="candado" className="candado" />
+                <TextField
+                  id="pswd"
+                  label="Contraseña"
+                  type="password"
+                  required
+                />
+              </div>
+              <div className="login-fogiveme">
+                <FormControlLabel
+                    control      = {
+                      <Checkbox
+                        checked  = {state.checkedB}
+                        onChange = {handleChangeChk}
+                        name     = "checkedB"
+                        color    = "primary"
+                      />
+                    }
+                    label        = "Recuerdame"
+                />
                 <p className="forgotLink">olvidé mi contraseña</p>
               </div>
+              <div>
+                <button className="Button">Ingresar</button>
+              </div>
+              <div className="textRegister">
+                <p>
+                  No tengo cuenta
+                  <Button color="primary" onClick={handleForm}><b> Registrame</b></Button>
+                  
+                </p>
+              </div>
             </div>
-            <div>
-              <button className="Button">Ingresar</button>
-            </div>
-            <div className="textRegister">
-              <p>
-                {" "}
-                No tengo cuenta,<b> Registrame</b>
-              </p>
-            </div>
+
           </div>
         </div>
       </form>
@@ -143,3 +177,5 @@ const Login = () => {
 };
 
 export default Login;
+
+

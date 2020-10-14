@@ -6,6 +6,7 @@
 
 body {
   width: 100%;
+<<<<<<< HEAD
 }
 
 
@@ -20,5 +21,60 @@ body {
 @media screen and (max-width: 1125px) {
   body {
     overflow-x: hidden;
+=======
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* background-image: url(./imagenes/imagen.png); */
+}
+
+/* SECTION esta es la sección de el responsive*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    overflow-y: initial;
+  }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    width: 100vw;
+    overflow-y: initial;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-image: url(./imagenes/imagen.png); */
+  }
+}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-image: url(./imagenes/imagen.png); */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-image: url(./imagenes/imagen.png); */
+>>>>>>> 075809333e6b9f39db00ee7726c999b3fb9b080e
   }
 }
