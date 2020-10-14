@@ -3,6 +3,7 @@ import "../styles/Login.css";
 import profe from "../imagenes/profesor.png";
 import candado from "../imagenes/icon-candado.png";
 import mail from "../imagenes/icons-mail.png";
+import user from "../imagenes/icons-user.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
 import Button from '@material-ui/core/Button';
@@ -61,7 +62,7 @@ const Login = () => {
   };
   return (
     <div className="Login">
-      <form>
+      <div className="fondoLogin-mobile">
         <div className="card-leftdivider">
           <div className="card-leftdividerFirst">
             <div className="card-sectionButtonClass">
@@ -103,11 +104,11 @@ const Login = () => {
           
           <div className="card-loginForm">
             <div>
-              <p className="titleLogin">Iniciar sesión</p>
+              <p className="titleLogin">Iniciar Sesión</p>
             </div>
             <div className="LoginContainer">
               <div className="LoginContainer-email">
-                <img src={mail} alt="mail" className="mail" />
+                <img src={user} alt="mail" className="mail" />
                 <TextField id="email" label="Correo" type="email" required />
               </div>
               <div className="LoginContainer-password">
@@ -134,12 +135,12 @@ const Login = () => {
                 <p className="forgotLink">olvidé mi contraseña</p>
               </div>
               <div>
-                <button className="Button">Ingresar</button>
+                <button className="Buttongo">Ingresar</button>
               </div>
               <div className="textRegister">
                 <p>
                   No tengo cuenta
-                  <Button color="primary" onClick={handleForm}><b> Registrame</b></Button>
+                  <Button  onClick={handleForm}><b> Registrame</b></Button>
                   
                 </p>
               </div>
@@ -147,7 +148,7 @@ const Login = () => {
 
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

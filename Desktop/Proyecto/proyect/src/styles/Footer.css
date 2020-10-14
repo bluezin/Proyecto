@@ -4,13 +4,21 @@
   width           : 100%;
   position        : absolute;
   bottom          : 0;
+  padding: 1%;
   /* margin-top: -64px; */
 }
 
 .footer-p {
-  font-family: monospace;
-  font-size: 15px;
+  font-size: 1em;
   color: white;
+}
+.footer-tareas {
+  color: white;
+  position: absolute;
+  right: 0;
+  margin-top: -20px;
+  margin-right: 9px;
+  font-size: 15px;
 }
 
 
@@ -22,13 +30,22 @@
     color: white;
     position: absolute;
     right: 0;
-    margin-top: -20px;
-    margin-right: 9px;
-    font-size: 15px;
+    font-size: 0.81rem;
+    text-align: end;
+    position: absolute;
+    
+  }
+  .footer-p {
+    right: 0;
+    text-align: end;
+    font-family: monospace;
+    font-size: 1em;
+    color: white;
   }
   .Footer {
-    background-color: rgb(102, 106, 117);
-    padding         : 23px;
+    font-size: 0.81rem;
+    background-color: rgba(0,213,177,1) ;
+    padding         : 1%;
     width           : 100%;
     position        : fixed;
     bottom          : 0;
@@ -41,12 +58,21 @@
     color: white;
     position: absolute;
     right: 0;
-    margin-top: -20px;
-    margin-right: 9px;
-    font-size: 15px;
+    font-size: 0.81rem;
+    text-align: end;
+    position: absolute;
+    
+  }
+  .footer-p {
+    right: 0;
+    text-align: end;
+    font-family: monospace;
+    font-size: 1em;
+    color: white;
   }
   .Footer {
-    background-color: rgb(102, 106, 117);
+    font-size: 0.81rem;
+    background-color: rgba(0,213,177,1) ;
     padding         : 23px;
     width           : 100%;
     position        : fixed;

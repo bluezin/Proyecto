@@ -23,17 +23,17 @@
 } 
 
 .card-rightdivider{
-    margin: 0% 11%;
+    /* margin: 0% 11%; */
 }
 
 .titleLogin{
     font-weight: 600;
-    margin     : 4% 0;
+    /* margin     : 4% 0; */
     width      : 100%;
     font-size  : 2rem;
 }
 .LoginContainer{
-    margin: 10% 0;
+    /* margin: 10% 0; */
 
 }
 #email-label{
@@ -97,11 +97,11 @@ span.MuiIconButton-root {
     position: absolute;
     bottom  :  20%;
 }
-button.Button {
+button.Buttongo {
     margin-top   : 12%;
     font-size    : 1rem;
-    background   : rgb(0,171,206);
-    background   : linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+    background: rgb(0,171,206);
+    background: linear-gradient(90deg, rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
     outline      : none;
     border       : none;
     border-radius: 15px;
@@ -172,45 +172,87 @@ margin    : 2%;
  
 
 */
-    /* SECTION esta es la sección de el responsive*/
- 
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
-        .Login{
-            margin: 0 14% 0 0%; 
-        }
-        .titleLogin{
-            font-weight: 600;
-            margin     : 3% 0;
-            width      : 100%;
-            font-size  : 1.5rem;
-        }
-        .card-loginForm{
-            margin: 0 0 0 7%;
-        }
+/* SECTION esta es la sección de el responsive*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Login{
+        background: rgb(0,171,206);
+        background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+        margin: -3% 0 0 0%; 
+        height: 90vh;
+        width: 100vw;
+    }
+    .fondoLogin-mobile {
+        background-color: aliceblue;
+        margin: 6% 8%;
+        display: inline-flex;
+        width: 83vw;
+        height: 73vh;
+        border-radius: 5%;
+    }
+    .card-rightdivider{
+        margin: 13% 11%;
+    }
+     
+    .titleLogin{
+        font-weight: 600;
+        width      : 100%;
+        font-size  : 1.5rem;
+    }
+    .card-loginForm{
+        /* margin: 0 0 0 7%; */
+    }
        
  }
  
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {
     .Login{
-        margin: 0 14% 0 0%; 
+        background: rgb(0,171,206);
+        background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+        margin: -3% 0 0 0%; 
+        height: 90vh;
+        width: 100vw;
+    }
+    .fondoLogin-mobile {
+        background-color: aliceblue;
+        margin: 6% 8%;
+        display: inline-flex;
+        width: 83vw;
+        height: 73vh;
+        border-radius: 5%;
+    }  
+    .card-rightdivider{
+        margin: 13% 11%;
     }
     .titleLogin{
         font-weight: 600;
-        margin     : 3% 0;
+        /* margin     : 3% 0; */
         width      : 100%;
         font-size  : 1.5rem;
     }
     .card-loginForm{
-        margin: 0 0 0 7%;
+        /* margin: 0 0 0 7%; */
     }
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
     .Login{
-        margin: 0 14% 0 0%; 
+        background: rgb(0,171,206);
+        background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+        margin: -3% 0 0 0%; 
+        height: 90vh;
+        width: 100vw;
+    }
+    .fondoLogin-mobile {
+        background-color: aliceblue;
+        margin: 6% 8%;
+        display: inline-flex;
+        width: 83vw;
+        height: 73vh;
+        border-radius: 8%;
     }
     .titleLogin{
         font-weight: 600;
