@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "../styles/Login.css";
 import profe from "../imagenes/profesor.png";
+import candado from "../imagenes/icon-candado.png";
+import mail from "../imagenes/icons-mail.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
+import Button from '@material-ui/core/Button';
 import { Link } from "react-router-dom";
 
 
@@ -22,7 +25,7 @@ const Login = () => {
   };
   const [formActivator, setFormActivator] = useState(true);
   const handleForm = () => {
-    setBooleano(true);
+    setFormActivator(true);
 
     console.log(booleano);
   };
@@ -97,44 +100,47 @@ const Login = () => {
         </div>
 
         <div className="card-rightdivider">
+          
           <div className="card-loginForm">
             <div>
               <p className="titleLogin">Iniciar sesión</p>
             </div>
             <div className="LoginContainer">
               <div className="LoginContainer-email">
+                <img src={mail} alt="mail" className="mail" />
                 <TextField id="email" label="Correo" type="email" required />
               </div>
               <div className="LoginContainer-password">
+                <img src={candado} alt="candado" className="candado" />
                 <TextField
                   id="pswd"
                   label="Contraseña"
                   type="password"
                   required
                 />
-                <div className="login-fogiveme">
-                  <FormControlLabel
-                      control      = {
-                        <Checkbox
-                          checked  = {state.checkedB}
-                          onChange = {handleChangeChk}
-                          name     = "checkedB"
-                          color    = "primary"
-                        />
-                      }
-                      label        = "Recuerdame"
-                  />
-                  <p className="forgotLink">olvidé mi contraseña</p>
-                </div>
+              </div>
+              <div className="login-fogiveme">
+                <FormControlLabel
+                    control      = {
+                      <Checkbox
+                        checked  = {state.checkedB}
+                        onChange = {handleChangeChk}
+                        name     = "checkedB"
+                        color    = "primary"
+                      />
+                    }
+                    label        = "Recuerdame"
+                />
+                <p className="forgotLink">olvidé mi contraseña</p>
               </div>
               <div>
                 <button className="Button">Ingresar</button>
               </div>
               <div className="textRegister">
                 <p>
-                  No tengo cuenta,
+                  No tengo cuenta
+                  <Button color="primary" onClick={handleForm}><b> Registrame</b></Button>
                   
-                  <b type="button" onClick={handleProfesor}> Registrame</b>
                 </p>
               </div>
             </div>
