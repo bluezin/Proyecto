@@ -1,12 +1,11 @@
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* body {
+body {
   width: 100%;
-} */
+}
 
 @media screen and (min-width: 1125px) {
   body {
@@ -16,47 +15,8 @@
 
 @media screen and (max-width: 1125px) {
   body {
+    overflow-y: scroll;
     overflow-x: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    
   }
 }
-
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-    overflow-y: initial;
-  }
-  
-} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  body {
-    width: 100vw;
-    overflow-y: initial;
-  }
-  
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-  body {
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-} */
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-
-  body {
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-} */

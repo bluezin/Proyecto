@@ -3,6 +3,7 @@
   color: white;
   background-image: url(../imagenes/imagen.png);
   height: 440px;
+  font-size: 16px;
 
 }
 .h1 {
@@ -16,8 +17,8 @@
   background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
   border-radius: 20px;
   width: 260px;
-  padding: 10px;
-  font-size: 1.7rem;
+  padding: 6px;
+  font-size: 1.5rem;
   margin-top: 59px;
   color: white;
   font-weight: bold;
@@ -25,9 +26,10 @@
 }
 
 @media screen and (max-width: 312px) {
-  .Button {
+  .Button-Home {
     width: 80%;
     font-size: 15px;
+    margin-top: 150px;
   }
 }
 @media screen and (min-width: 865px) {
@@ -46,14 +48,12 @@
 
 @media screen and (min-width: 1125px) {
   .Home {
-    height: 440px;
-
-  }
+    height: 440;
 }
-
+}
 @media screen and (max-width: 1125px) {
   .Home {
-    height: 590px;
+    height: 610px;
 
   }
 }
