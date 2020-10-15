@@ -137,7 +137,10 @@ const Login = () => {
 
                 </div>
                 <div className="forgotLink">
-                  <p >olvidé mi contraseña</p>
+                <Button  onClick={handleForm} className="ButtonForgot">
+                  olvidé mi contraseña
+                </Button>
+
                 </div>
               </div>
               <div>

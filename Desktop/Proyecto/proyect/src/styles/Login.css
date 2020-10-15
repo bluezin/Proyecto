@@ -450,7 +450,7 @@ button.Buttongo {
         width: 66vw;
     }
     #email-label{
-        padding: 3% 14%;
+        padding: 1% 9%;
         font-size  : .82em;
     }
     #email{
@@ -460,11 +460,14 @@ button.Buttongo {
         padding: 3% 14%;
     }
     #pswd-label{
+        padding: 1% 9%;
         font-size  : .82em;
-        padding: 3% 14%;
     
     }
-     
+    .forgotLink button{
+         font-size: .81em;
+         margin: -5% 0 0 0;
+    }
  }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
