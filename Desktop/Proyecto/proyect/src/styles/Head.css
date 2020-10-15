@@ -1,7 +1,7 @@
 .Head{
   /* background-color: rgb(102, 106, 117); */
   background-color: rgb(145, 156, 190);
-
+  width: 100vw;
   padding: 6px;
 }
 .h1 {

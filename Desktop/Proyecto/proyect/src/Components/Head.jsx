@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Head.css";
-import logotipo from "../imagenes/logotipo.png";
+import logotipo from "../imagenes/logotipo2.png";
 import "../styles/Home.css";
 import logo from "../imagenes/logotipo.png";
 import { Link } from "react-router-dom";

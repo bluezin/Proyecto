@@ -32,7 +32,7 @@ const Login = () => {
     console.log(booleano);
   };
   const arrayTeacher = [
-    " ¿ Qué puedo hacer como Profesor?",
+    " ¿ Qué puedo hacer como Genio?",
     " 1. Selecciono las asignaturas.",
     " 2. Veo las tareas.",
     " 3. Las organizo a mi preferencia.",
@@ -67,7 +67,7 @@ const Login = () => {
         <div className="card-leftdivider">
           <div className="card-leftdividerFirst">
             <div className="card-sectionButtonClass">
-                <button className="ButtonClass" type="button" onClick={handleProfesor}>Profesor</button>
+                <button className="ButtonClass" type="button" onClick={handleProfesor}>Genio</button>
                 <button className="ButtonClass" type="button" onClick={handleEstudiante}>Estudiante</button>
             </div>
             {/* <div className="bolcklogo">
@@ -76,20 +76,6 @@ const Login = () => {
               </p>
             </div> */}
             <div>
-              <button
-                className="Button-login"
-                type="button"
-                onClick={handleProfesor}
-              >
-                Profesor
-              </button>
-              <button
-                className="Button-login"
-                type="button"
-                onClick={handleEstudiante}
-              >
-                Estudiante
-              </button>
               <div className="card-sectionTextClass">
                 {booleano
                   ? arrayTeacher.map((item, index) => {
@@ -108,9 +94,9 @@ const Login = () => {
 
           <div className="card-leftdividerSecond">
             {booleano ? (
-              <img src={profe} alt="logo" className="logo" />
+              <img src={profe} alt="logos" className="logos" />
             ) : (
-              <img src={estudiante} alt="logo" className="logo" />
+              <img src={estudiante} alt="logos" className="logos" />
             )}
           </div>
         </div>
@@ -135,21 +121,8 @@ const Login = () => {
                   required
                 />
               </div>
-              <div className="LoginContainer">
-                <div className="LoginContainer-email">
-                  <img src={mail} alt="mail" className="mail" />
-                  <TextField id="email" label="Correo" type="email" required />
-                </div>
-                <div className="LoginContainer-password">
-                  <img src={candado} alt="candado" className="candado" />
-                  <TextField
-                    id="pswd"
-                    label="Contraseña"
-                    type="password"
-                    required
-                  />
-                </div>
-                <div className="login-fogiveme">
+              <div className="login-fogiveme">
+                <div  className="login-forgotcheck">
                   <FormControlLabel
                     control={
                       <Checkbox
@@ -160,24 +133,26 @@ const Login = () => {
                       />
                     }
                     label        = "Recuerdame"
-                />
-                <p className="forgotLink">olvidé mi contraseña</p>
+                  />
+
+                </div>
+                <div className="forgotLink">
+                  <p >olvidé mi contraseña</p>
+                </div>
               </div>
               <div>
                 <button className="Buttongo">Ingresar</button>
               </div>
               <div className="textRegister">
-                <p>
-                  No tengo cuenta
-                  <Button  onClick={handleForm}><b> Registrame</b></Button>
-                  
-                </p>
+                  <p>
+                    No tengo cuenta
+                    <Button  onClick={handleForm}><b> Registrame</b></Button>
+                  </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

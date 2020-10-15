@@ -3,7 +3,7 @@
   color: white;
   background-image: url(../imagenes/imagen.png);
   height: 440px;
-
+  width: 100vw;
 }
 .h1 {
   padding-top: 110px;

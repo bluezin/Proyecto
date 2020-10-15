@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 .Login{
     font-family: 'Open Sans', sans-serif;
 }
@@ -6,10 +6,11 @@ form{
     grid-template-columns: auto auto ;
     display: flex;
 }
-span{
-    width: 100%;
-}
 
+
+.ButtonClass:focus {
+    color: black;
+}
 .ButtonClass {
     margin          : 2%;
     font-size       : 15px;
@@ -35,7 +36,7 @@ span{
 }
 
 .titleLogin{
-    font-weight: 600;
+    font-weight: 700;
     margin     : 4% 0 22%;
     width      : 100%;
     font-size  : 2rem;
@@ -44,11 +45,11 @@ span{
     /* margin: 10% 0; */
     
 }
-#email-label{
-    padding: 3% 14%;
-    font-size  : .82em;
-}
 
+
+span.MuiCheckbox-colorPrimary.Mui-checked {
+    color:   rgb(0,171,206);
+}
 .Button-login {
     margin-top: 20px;
     font-size: 15px;
@@ -97,6 +98,10 @@ p.MuiTypography-body1 {
     line-height: 1.5;
     letter-spacing: 0.00938em;
 }
+#email-label{
+    padding: 3% 14%;
+    font-size  : .82em;
+}
 #email{
     padding: 3% 14%;
 }
@@ -112,6 +117,10 @@ p.MuiTypography-body1 {
     margin: 10% 0;
     width : 100%;
 }
+.candado{
+    display: flex;
+    margin: 0 0 -21% 0;
+}
 .mail{
     display: flex;
     margin: 0 0 -21% 0;
@@ -120,17 +129,13 @@ p.MuiTypography-body1 {
     width: 100%;
     align-items: center;
 }
-.candado{
-    display: flex;
-    margin: 0 0 -21% 0;
-}
 
 span.MuiIconButton-root {
     flex     : 0;
     font-size: 0.8 1em;
 }
 span.MuiTypography-body1 {
-    font-size: 0.81em;
+    font-size: 0.61em;
     
 }
 .login-fogiveme{
@@ -138,9 +143,10 @@ span.MuiTypography-body1 {
 }
 
 .forgotLink{
-    font-size : 0.81em;
+    font-size : 0.61em;
     text-align: end;
-    margin    : 5% 0 0% 0%;
+    margin    : 5.5% 0 0% 0%;
+    width     : 100%;
 }
 .DescrptionTextLogin{
     font-size: 1em;
@@ -150,17 +156,20 @@ span.MuiTypography-body1 {
     text-align: center;
     
 }
+.logos{
+    width   : 30vw;
 
+}
 .imagen{
     width   : 37%;
     position: absolute;
-    bottom  :  20%;
+    bottom  :  8%;
 }
 button.Buttongo {
     margin-top   : 12%;
     font-size    : 1rem;
     background: rgb(0,171,206);
-    background: linear-gradient(90deg, rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+    /* background: linear-gradient(90deg, rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%); */
     outline      : none;
     border       : none;
     border-radius: 15px;
@@ -195,11 +204,9 @@ button.Buttongo {
     }
     .card-rightdivider{
         margin: 13% 11%;
-    }
-
-     
+    } 
     .titleLogin{
-        font-weight: 600;
+        font-weight: 700;
         width      : 100%;
         font-size  : 1.5rem;
     }
@@ -209,8 +216,38 @@ button.Buttongo {
     }
     button.MuiButton-root {
         font-size: 1em;
+    
     }
-       
+    .LoginContainer-email{
+        width: 68vw;
+        align-items: center;
+        margin: 12% 0;
+    }
+    .LoginContainer-password{
+        width: 68vw;
+        align-items: center;
+        margin: 16% 0 1%;
+    }
+    #email-label{
+        padding: 3% 14%;
+        font-size  : .82em;
+    }
+    #email{
+        padding: 5% 14%;
+    }
+    #pswd{
+        padding: 5% 14%;
+    }
+    #pswd-label{
+        font-size  : .82em;
+        padding: 3% 14%;
+    
+    }
+    .login-fogiveme{
+        width: 68vw;
+        grid-template-columns: auto auto ;
+
+    } 
  }
  
  /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -221,6 +258,7 @@ button.Buttongo {
         margin: -3% 0 0 0%; 
         height: 90vh;
         width: 100vw;
+        /* overflow: hidden; */
     }
     .fondoLogin-mobile {
         background-color: aliceblue;
@@ -234,13 +272,28 @@ button.Buttongo {
         margin: 13% 11%;
     }
     .titleLogin{
-        font-weight: 600;
+        font-weight: 700;
         /* margin     : 3% 0; */
         width      : 100%;
         font-size  : 1.5rem;
     }
     .card-loginForm{
         /* margin: 0 0 0 7%; */
+    }
+    #email-label{
+        padding: 3% 14%;
+        font-size  : .82em;
+    }
+    #email{
+        padding: 5% 14%;
+    }
+    #pswd{
+        padding: 5% 14%;
+    }
+    #pswd-label{
+        font-size  : .82em;
+        padding: 3% 14%;
+    
     }
     button.MuiButton-root {
         font-size: 1em;
@@ -254,7 +307,7 @@ button.Buttongo {
         background: rgb(0,171,206);
         background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
         margin: -3% 0 0 0%; 
-        height: 90vh;
+        height: 100vh;
         width: 100vw;
     }
     .fondoLogin-mobile {
@@ -266,7 +319,7 @@ button.Buttongo {
         border-radius: 8%;
     }
     .titleLogin{
-        font-weight: 600;
+        font-weight: 700;
         margin     : 3% 0;
         width      : 100%;
         font-size  : 1.5rem;
@@ -274,51 +327,144 @@ button.Buttongo {
     .card-loginForm{
         margin: 0 0 0 7%;
     }
+    .card-rightdivider{
+        margin: 7% 11%;
+        text-align: center;
+        width: 66vw;
+    }
+    #email-label{
+        padding: 3% 14%;
+        font-size  : .82em;
+    }
+    #email{
+        padding: 5% 14%;
+    }
+    #pswd{
+        padding: 5% 14%;
+    }
+    #pswd-label{
+        font-size  : .82em;
+        padding: 3% 14%;
+    
+    }
+    button.MuiButton-root {
+        font-size: 1em;
+    }
+    .LoginContainer-email{
+        width: 58vw;
+        align-items: center;
+        margin: 4% 0;
+    }
+    .LoginContainer-password{
+        width: 58vw;
+        align-items: center;
+        margin: 4% 0 1%;
+    }
+    .mail{
+        display: flex;
+        margin: 0 0 -12% 0;
+    }
+    .candado{
+        display: flex;
+        margin: 0 0 -12% 0;
+    }
+
  }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
   
-    form{
-        display              : flex;
-        position             : relative;
+    div.login{
+        display : flex;
+        position: relative;
+        margin  : 0;
+    }
+    .fondoLogin-mobile {
+        background-color: aliceblue;
+        margin: 0;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0%;
     }
     .card-leftdivider{
         background: rgb(0,171,206);
         background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
         color     : white; 
         display   : flex;
+        grid-template-columns: auto auto ;
     } 
+    .djj{
+        display: flex;
+    }
     .card-sectionButtonClass{
         display              : flex;
         grid-template-columns: auto auto ;
     
     }
+    .card-leftdivider{
+    } 
+    .card-leftdividerFirst{
+        margin: 4%;
+
+    }
+    .logos {
+        width: 48%;
+        height: 45%;
+        margin: 21% -14%;
+    }
      .card-leftdividerSecond{
-         margin: 25% 0;
+         margin: 16% 0 0;
+         display: contents;
      }
      .descrption-question{
          font-size: 1.5em;
          margin   : 0;
      }
-     
-    
-    
+     .card-rightdivider{
+        margin: 11% 0%;
+        width: 50vw;
+    }
+    .card-loginForm {
+        margin: 0 0 0 7%;
+        width: 31vw;
+    }
+    .LoginContainer-password {
+        width: 33vw;
+        align-items: center;
+        margin: 4% 0 1%;
+    }
+    .LoginContainer-email {
+        width: 33vw;
+        align-items: center;
+        margin: 14% 0;
+    }
      .card-sectionTextClass{
          margin: 2%;
+         font-size: .83em;
+         width: 36vw;
      }
-     
-    /* .card-leftdivider{
-         background           : rgb(0,171,206);
-         background           : linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
-         grid-template-columns: 3fr 1 ;
-         display              : flex;
-         color                : white; 
-    } 
-    .card-leftdividerFirst{
-        margin    : 2%;
+     .card-rightdivider {
+        margin: 7% 0%;
+        text-align: unset;
+        width: 66vw;
+    }
+    #email-label{
+        padding: 3% 14%;
+        font-size  : .82em;
+    }
+    #email{
+        padding: 3% 14%;
+    }
+    #pswd{
+        padding: 3% 14%;
+    }
+    #pswd-label{
+        font-size  : .82em;
+        padding: 3% 14%;
     
-    }  */
+    }
+     
  }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
