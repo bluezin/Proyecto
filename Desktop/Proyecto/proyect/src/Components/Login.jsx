@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import "../styles/Login.css";
 import profe from "../imagenes/profesor.png";
-import candado from "../imagenes/icon-candado.png";
 // import mail from "../imagenes/icons-mail.png";
-import user from "../imagenes/icons-user.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
-import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import LoginForm from"./LoginForm"
 
 // import Typography from "@material-ui/core/Typography";
 
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import TextField from "@material-ui/core/TextField";
 
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
@@ -46,13 +40,6 @@ const Login = () => {
     " 5. Selecciono la que se ajuste a mi bolsillo y a mi nivel educativo.",
     " 6. Entrego mi tarea y disfruto de mi tiempo libre.",
   ];
-  const [state, setState] = React.useState({
-    checkedB: true,
-  });
-
-  const handleChangeChk = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
-  };
   return (
     <div className="Login">
       <div className="fondoLogin-mobile">
@@ -90,60 +77,8 @@ const Login = () => {
         </div>
 
         <div className="card-rightdivider">
+          <LoginForm/>
           
-          <div className="card-loginForm">
-            <div>
-              <p className="titleLogin">Iniciar Sesión</p>
-            </div>
-            <div className="LoginContainer">
-              <div className="LoginContainer-email">
-                <img src={user} alt="mail" className="mail" />
-                <TextField id="email" label="Correo" type="email" required />
-              </div>
-              <div className="LoginContainer-password">
-                <img src={candado} alt="candado" className="candado" />
-                <TextField
-                  id="pswd"
-                  label="Contraseña"
-                  type="password"
-                  required
-                />
-              </div>
-              <div className="login-fogiveme">
-                <div  className="login-forgotcheck">
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={state.checkedB}
-                        onChange={handleChangeChk}
-                        name="checkedB"
-                        color="primary"
-                      />
-                    }
-                    label        = "Recuerdame"
-                  />
-
-                </div>
-                <div className="forgotLink">
-                <Button className="ButtonForgot">
-                  olvidé mi contraseña
-                </Button>
-
-                </div>
-              </div>
-              <div>
-                <button className="Buttongo">Ingresar</button>
-              </div>
-              <div className="textRegister">
-                  <p>
-                    No tengo cuenta
-                    <Link to="/Register">
-                      <Button  ><b> Registrame</b></Button>
-                    </Link>
-                  </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
