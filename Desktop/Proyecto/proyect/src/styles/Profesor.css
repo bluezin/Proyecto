@@ -1,5 +1,7 @@
 .Profesor {
   background-image: url(../imagenes/lampara.png);
+  font-size: 17px;
+
 }
 .profe-p{
   list-style: circle;
@@ -29,7 +31,7 @@
 
 
 
-@media screen and (min-width: 1125px) {
+@media screen and (min-width: 1126px) {
   .Button-profesor {
     text-align: center;
     margin-top: -250px;
@@ -40,7 +42,7 @@
   .div-imagen {
     position: relative;
     top: -260px;
-    left: 500px;
+    left: 1000px;
   }
 
   .imagen-profesor {
@@ -48,7 +50,7 @@
   }
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1126px) {
   .div-imagen {
     text-align: center;
     margin-top: -30px;
@@ -61,7 +63,8 @@
     margin-top: -40px;
   }
   .Profesor {
-    height: 590px;
+    height: 610px;
+
   }
 }
 
