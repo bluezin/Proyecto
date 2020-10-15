@@ -2,13 +2,10 @@ import React, { useState } from "react";
 import "../styles/Login.css";
 import profe from "../imagenes/profesor.png";
 import candado from "../imagenes/icon-candado.png";
-import mail from "../imagenes/icons-mail.png";
+// import mail from "../imagenes/icons-mail.png";
 import user from "../imagenes/icons-user.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
-import PropTypes from "prop-types";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 
@@ -25,12 +22,7 @@ const Login = () => {
 
     console.log(booleano);
   };
-  const [formActivator, setFormActivator] = useState(true);
-  const handleForm = () => {
-    setFormActivator(true);
-
-    console.log(booleano);
-  };
+  
   const arrayTeacher = [
     " ¿ Qué puedo hacer como Genio?",
     " 1. Selecciono las asignaturas.",
@@ -70,11 +62,7 @@ const Login = () => {
                 <button className="ButtonClass" type="button" onClick={handleProfesor}>Genio</button>
                 <button className="ButtonClass" type="button" onClick={handleEstudiante}>Estudiante</button>
             </div>
-            {/* <div className="bolcklogo">
-              <p>
-                <img src={logo} alt="logo" className="logo" />
-              </p>
-            </div> */}
+            
             <div>
               <div className="card-sectionTextClass">
                 {booleano
@@ -137,7 +125,7 @@ const Login = () => {
 
                 </div>
                 <div className="forgotLink">
-                <Button  onClick={handleForm} className="ButtonForgot">
+                <Button className="ButtonForgot">
                   olvidé mi contraseña
                 </Button>
 
@@ -149,7 +137,9 @@ const Login = () => {
               <div className="textRegister">
                   <p>
                     No tengo cuenta
-                    <Button  onClick={handleForm}><b> Registrame</b></Button>
+                    <Link to="/Register">
+                      <Button  ><b> Registrame</b></Button>
+                    </Link>
                   </p>
               </div>
             </div>

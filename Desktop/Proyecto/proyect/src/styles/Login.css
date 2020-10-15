@@ -2,8 +2,9 @@
 .Login{
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
-    height: 100vw;
+    height: 80vh;
     z-index: 0;
+    max-height: 80vh;
 }
 form{
     grid-template-columns: auto auto ;
