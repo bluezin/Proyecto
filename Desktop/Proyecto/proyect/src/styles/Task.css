@@ -30,8 +30,8 @@
   margin-top: 20px;
 }
 
-
-
+/* 
+/*  */
 @media screen and (min-width: 1140px) {
   .div-student {
     position: relative;
@@ -114,5 +114,5 @@
   .div-student {
     margin-top: 1px;
   }
-}
+} 
 

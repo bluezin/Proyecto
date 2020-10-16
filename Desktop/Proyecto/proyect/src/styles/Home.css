@@ -2,7 +2,7 @@
   text-align: center;
   color: white;
   background-image: url(../imagenes/imagen.png);
-  height: 440px;
+  height: 80vh;
   width: 100vw;
 }
 .h1 {
@@ -23,7 +23,7 @@
   font-weight: bold;
   font-family: monospace;
 }
-
+/* /*  */
 @media screen and (max-width: 312px) {
   .Button-Home {
     width: 80%;
@@ -61,4 +61,4 @@
   .Button{
     margin-top: 160px;
   }
-}
+} 
