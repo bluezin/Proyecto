@@ -1,12 +1,18 @@
 .Home {
-  text-align: center;
-  color: white;
   background-image: url(../imagenes/imagen.png);
-  height: 80vh;
-  width: 100vw;
+  font-size: 1.5em;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+  
+  /* background-attachment: fixed; */
 }
 .h1 {
   padding-top: 110px;
+}
+.each-slide{
+  height: 100%;
 }
 .Button-Home {
   left: 250px;
@@ -24,7 +30,7 @@
   font-family: monospace;
 }
 /* /*  */
-@media screen and (max-width: 312px) {
+/* @media screen and (max-width: 312px) {
   .Button-Home {
     width: 80%;
     font-size: 15px;
@@ -61,4 +67,4 @@
   .Button{
     margin-top: 160px;
   }
-} 
+}  */

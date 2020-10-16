@@ -1,12 +1,53 @@
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	overflow             : hidden; /* es para que no tenga scroll  nop recomendado en mobile*/
-  /* max-width: 100vw; */
+	box-sizing : border-box;
+	padding    : 0;
+	margin     : 0;
+	overflow   : hidden; /* es para que no tenga scroll  nop recomendado en mobile*/
   max-height: 100vh;
+  transition: all 0.3s;
+  /* max-width: 100vw; */
+  
 }
+.SOLID{
+  height: 100%;
+}
+.App{
+  max-height: 80vh;
+  max-width: 100vw;
+  height: 80vh;
 
+}
+.react-slideshow-wrapper .images-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.react-slideshow-wrapper.slide {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.react-slideshow-container{
+  height: 100%;
+}
+.react-slideshow-container .default-nav {
+  height: auto;
+  background: transparent;
+  width: 30px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-slideshow-container .default-nav:hover, .react-slideshow-container .default-nav:focus {
+  background: transparent;
+  color: #666;
+  outline: 0;
+}
 @media screen and (min-width: 1125px) {
  
 }

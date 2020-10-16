@@ -2,7 +2,13 @@
 
 .Task {
   background-image: url(../imagenes/laptop.png);
-  font-size: 17px;
+  font-size: 1.5em;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+  /* background-attachment: fixed; */
+  /* position             : relative; */
 }
 
 .Button-Task {
@@ -20,7 +26,7 @@
   font-weight: bold;
   font-family: monospace;
 }
-.Button-div {
+/* .Button-div {
   text-align: center;
 }
 
@@ -28,11 +34,11 @@
   margin-left: 150px;
   color: white;
   margin-top: 20px;
-}
+} */
 
 /* 
 /*  */
-@media screen and (min-width: 1140px) {
+/* @media screen and (min-width: 1140px) {
   .div-student {
     position: relative;
     top: -300px;
@@ -49,8 +55,8 @@
     margin-top: -350px;
   }
 
-}
-
+} */
+/* 
 @media screen and (max-width: 1140px) {
   .Task {
     height: 610px;
@@ -115,4 +121,4 @@
     margin-top: 1px;
   }
 } 
-
+ */
