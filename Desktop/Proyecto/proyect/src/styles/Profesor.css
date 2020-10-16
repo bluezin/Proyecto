@@ -102,3 +102,9 @@
     margin-top: 1px;
   }
 }
+
+@media screen and (min-height: 768px) {
+  .Profesor {
+    height: 638px;
+  }
+}

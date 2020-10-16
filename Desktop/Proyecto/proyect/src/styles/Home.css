@@ -41,24 +41,29 @@
   .Home {
     font-size: 10px;
   }
-
 }
-
 
 @media screen and (min-width: 1125px) {
   .Home {
     height: 440;
-}
+  }
 }
 @media screen and (max-width: 1125px) {
   .Home {
     height: 610px;
-
   }
 }
 
 @media screen and (max-width: 300px) {
-  .Button{
+  .Button {
     margin-top: 160px;
+  }
+}
+
+
+@media screen and (min-height: 768px) {
+  .Home {
+    padding-top: 40px;
+    height: 600px;
   }
 }

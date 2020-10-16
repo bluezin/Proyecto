@@ -116,3 +116,10 @@
   }
 }
 
+
+
+@media screen and (min-height: 768px) {
+  .Task {
+    height: 640px;
+  }
+}

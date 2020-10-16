@@ -1,8 +1,9 @@
-.Head{
+.Head {
   /* background-color: rgb(102, 106, 117); */
   background-color: rgb(145, 156, 190);
-  padding: 1% 1% 3%;
-  max-height: 10vh;
+  /* max-height: 10vh; */
+  padding-bottom: 9px;
+  width: 100%;
 }
 .h1 {
   padding-top: 110px;
@@ -21,12 +22,18 @@
   color: white;
 }
 
-.logotipo{
-  width: 220px;
+.logotipo {
+  width: 180px;
 }
 
-@media screen and (max-width: 312px){
-  .logotipo{
+@media screen and (max-width: 312px) {
+  .logotipo {
     width: 70%;
   }
 }
+
+/* @media screen and (min-height: 768px) {
+  .Head {
+    padding-bottom: 35px;
+  }
+} */

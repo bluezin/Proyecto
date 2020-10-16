@@ -6,6 +6,7 @@ import { Layout } from "./Layout";
 import Task from "./Task";
 import Profesor from "./Profesor";
 import Register from "./Register";
+import Home from "./Home";
 
 const Rutas = () => {
   return (
@@ -17,6 +18,8 @@ const Rutas = () => {
           <Route exact path="/alumno" component={Task} />
           <Route exact path="/profesor" component={Profesor} />
           <Route exact path="/Register" component={Register} />
+          <Route exact path="/Home" component={Home} />
+
         </Switch>
       </Layout>
     </BrowserRouter>
