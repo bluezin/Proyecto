@@ -6,10 +6,7 @@
     z-index: 0;
     max-height: 80vh;
 }
-form{
-    grid-template-columns: auto auto ;
-    display: flex;
-}
+
 
 
 .ButtonClass:focus {
