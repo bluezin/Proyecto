@@ -6,13 +6,20 @@ import user from "../imagenes/icons-user.png";
 import candado from "../imagenes/icon-candado.png";
 import mail from "../imagenes/icons-mail.png";
 
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
 import TextField from "@material-ui/core/TextField";
-import { Link } from "react-router-dom";
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+
 
 
 const Register = ({ handleRegister }) => {
+  const [age, setAge] = React.useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   return (
     <div className="Register">
       <div className="card-loginForm">
@@ -26,13 +33,13 @@ const Register = ({ handleRegister }) => {
           </div>
           <div className="registerContainer-email">
             <img src={mail} alt="mail" className="mail" />
-            <TextField id="email" label="Correo" type="email" required />
+            <TextField id="newEmail" label="Correo" type="email" required />
           </div>
          
           <div className="registerContainer-password">
             <img src={candado} alt="candado" className="candado" />
             <TextField
-              id="pswd"
+              id="newpswd"
               label="Contraseña"
               type="password"
               required
@@ -41,11 +48,25 @@ const Register = ({ handleRegister }) => {
           <div className="registerContainer-password">
             <img src={candado} alt="candado" className="candado" />
             <TextField
-              id="pswd"
+              id="newPswdConfirm"
               label="Confirmar Contraseña"
               type="password"
               required
             />
+          </div>
+          <div className="radioButtonSelection">
+            <FormControl className="selection">
+              <InputLabel id="demo-simple-select-label">Tipo</InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={age}
+                onChange={handleChange}
+              >
+                <MenuItem value={1}>Estudiante</MenuItem>
+                <MenuItem value={2}>Genio</MenuItem>
+              </Select>
+            </FormControl>
           </div>
           <div>
             <button className="Buttongo">Registrarme</button>

@@ -1,13 +1,35 @@
 .Register{
-    max-width: 50VW;
-    max-height: 60vh;
-}
-#username-label{
-    padding: 3% 9%;
-    font-size  : .82em;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 #username{
-    padding: 4% 0%;
+    padding: 3% 9%;
+}
+#username-label{
+    padding: 1% 15%;
+    font-size  : .82em;
+}
+#newEmail{
+    padding: 3% 9%;
+}
+#newEmail-label{
+    font-size  : .82em;
+    padding: 1% 15%;
+}
+#newpswd{
+    padding: 3% 9%;
+}
+#newpswd-label{
+    font-size  : .82em;
+    padding: 1% 15%;
+}
+#newPswdConfirm{
+    padding: 3% 9%;
+}
+#newPswdConfirm-label{
+    font-size  : .82em;
+    padding: 1% 15%;
+
 }
 .user{
     display: flex;
@@ -23,19 +45,45 @@
     font-size  : 2rem;
 }
 .registerContainer-user{
-    margin: 2% 0;
+    margin: 10% 0;
 }
 .registerContainer-email{
-    margin: 2% 0;
+    margin: 10% 0;
     
 }
 .registerContainer-password{
-
+    margin: 10% 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
+    .titleRegister{
+        font-weight: 700;
+        margin     : 4% 0 6%;
+        width      : 100%;
+        font-size  : 2rem;
+    }
+    .registerContainer-user{
+        margin: 5% 0;
+    }
+    .registerContainer-email{
+        margin: 5% 0;
+        
+    }
+    .registerContainer-password{
+        margin: 5% 0;
+    }
+    #demo-simple-select.MuiInput-root {
+        position: relative;
+        width: 100%;
+    }
+    .textRegister {
+        font-size: 0.8em;
+        text-align: center;
+        margin: -3% 0;
+        padding: 0% 0;
+    }
+   
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
