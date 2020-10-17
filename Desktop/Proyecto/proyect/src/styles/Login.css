@@ -359,57 +359,9 @@ button.Buttongo {
     }
     .fondoLogin-mobile {
         background-color: aliceblue;
-        margin: 6% 8%;
+        margin: 6% 20%;
         display: inline-flex;
-        width: 81vw;
-        height: 73vh;
-        border-radius: 5%;
-    }  
-    .card-rightdivider{
-        margin: 6% 11%;
-    }
-    .titleLogin{
-        font-weight: 700;
-        width      : 100%;
-        margin     : 4% 0 5%;
-        font-size  : 1.5rem;
-    }
-    .card-loginForm{
-    }
-    #email-label{
-        padding: 3% 14%;
-        font-size  : .82em;
-    }
-    #email{
-        padding: 5% 14%;
-    }
-    #pswd{
-        padding: 5% 14%;
-    }
-    #pswd-label{
-        font-size  : .82em;
-        padding: 3% 14%;
-
-    }
-    button.MuiButton-root {
-        font-size: 1em;
-    }
-}
- 
- /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .Login{
-        background: rgb(0,171,206);
-        background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
-        margin: -3% 0 0 0%; 
-        height: 100%;
-        width: 100vw;
-    }
-    .fondoLogin-mobile {
-        background-color: aliceblue;
-        margin: 6% 8%;
-        display: inline-flex;
-        width: 83vw;
+        width: 59vw;
         height: 73vh;
         border-radius: 8%;
     }
@@ -462,6 +414,95 @@ button.Buttongo {
     .candado{
         display: flex;
         margin: 0 0 -12% 0;
+    }
+    .logos-profe {
+        width: 48%;
+        height: 45%;
+        margin: 21% -14%;
+    }
+    .imagen{
+        width   : 37%;
+        position: absolute;
+        bottom  :  8%;
+    }
+}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+    .Login{
+        background: rgb(0,171,206);
+        background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
+        margin: -3% 0 0 0%; 
+        height: 100%;
+        width: 100vw;
+    }
+    .fondoLogin-mobile {
+        background-color: aliceblue;
+        margin: 6% 23%;
+        display: inline-flex;
+        width: 50vw;
+        height: 73vh;
+        border-radius: 8%;
+    }
+    .titleLogin{
+        font-weight: 700;
+        margin     : 3% 0;
+        width      : 100%;
+        font-size  : 1.5rem;
+    }
+    .card-loginForm{
+        margin: 0 0 0 7%;
+    }
+    .card-rightdivider{
+        margin: 7% 11%;
+        text-align: center;
+        width: 66vw;
+    }
+    #email-label{
+        padding: 3% 7%;
+        font-size  : .82em;
+    }
+    #pswd-label{
+        font-size  : .82em;
+        padding: 3% 7%;
+
+    }
+    #email{
+        padding: 5% 7%;
+    }
+    #pswd{
+        padding: 5% 7%;
+    }
+    button.MuiButton-root {
+        font-size: 1em;
+    }
+    .LoginContainer-email{
+        width: 58vw;
+        align-items: center;
+        margin: 4% 0;
+    }
+    .LoginContainer-password{
+        width: 58vw;
+        align-items: center;
+        margin: 4% 0 1%;
+    }
+    .mail{
+        display: flex;
+        margin: 0 0 -12% 0;
+    }
+    .candado{
+        display: flex;
+        margin: 0 0 -12% 0;
+    }
+    .logos-profe {
+        width: 48%;
+        height: 45%;
+        margin: 21% -14%;
+    }
+    .imagen{
+        width   : 37%;
+        position: absolute;
+        bottom  :  8%;
     }
 }
  
