@@ -26,15 +26,9 @@
     cursor          : pointer;
 }
 .card-leftdivider{
-    /* background: rgb(0,171,206);
-    background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
-    color     : white;  */
     display   : none;
 } 
 
-.card-rightdivider{
-    /* margin: 0% 11%; */
-}
 
 .titleLogin{
     font-weight: 700;
@@ -42,12 +36,7 @@
     width      : 100%;
     font-size  : 2rem;
 }
-.LoginContainer{
-    /* margin: 10% 0; */
-    
-}
 
-/* /*  */
 span.MuiCheckbox-colorPrimary.Mui-checked {
     color:   rgb(0,171,206);
 }
@@ -182,7 +171,6 @@ button.Buttongo {
     font-family  : sans-serif;
 } 
 
-/* background: linear-gradient(90deg, rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%); */
 /* SECTION esta es la sección de el responsive*/
 
 
@@ -348,7 +336,6 @@ button.Buttongo {
 }
  
  /* Small devices (portrait tablets and large phones, 600px and up) */
- /* overflow: hidden; */
 @media only screen and (min-width: 600px) {
     .Login{
         background: rgb(0,171,206);
@@ -537,8 +524,7 @@ button.Buttongo {
         grid-template-columns: auto auto ;
 
     }
-    .card-leftdivider{
-    } 
+  
     .card-leftdividerFirst{
         margin: 4%;
 

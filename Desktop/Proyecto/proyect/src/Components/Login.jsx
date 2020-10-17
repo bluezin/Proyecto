@@ -6,9 +6,6 @@ import estudiante from "../imagenes/estudiante.png";
 import LoginForm from "./LoginForm";
 import Register from "./Register";
 
-// import mail from "../imagenes/icons-mail.png";
-// import Typography from "@material-ui/core/Typography";
-
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
   const handleProfesor = () => {

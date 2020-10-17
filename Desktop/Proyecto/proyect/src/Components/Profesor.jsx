@@ -1,5 +1,4 @@
 import React from "react";
-// import poligono from "../imagenes/poligono.png";
 import profesor from "../imagenes/profesor.png";
 import "../styles/Profesor.css";
 import { Link } from "react-router-dom";

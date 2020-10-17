@@ -3,7 +3,6 @@
 .Footer {
   font-family     : 'Open Sans', sans-serif;
   background-color: #4A4A4A;
-  
   padding         : 2%;
   width           : 100%;
   visibility      : initial;
@@ -12,9 +11,6 @@
   display         : flex;
   position        : absolute;
 }
-/* background-color: rgb(145, 156, 190); */
-/* position: absolute; */
-/* /*  */
 .footer-p {
   font-size: 1em;
   color: white;
@@ -41,7 +37,7 @@
     position: absolute;
   }
 }
-/* position: absolute; */
+
 .footer-p {
   right: 0;
   text-align: end;
