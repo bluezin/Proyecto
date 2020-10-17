@@ -26,9 +26,9 @@
     cursor          : pointer;
 }
 .card-leftdivider{
-    background: rgb(0,171,206);
+    /* background: rgb(0,171,206);
     background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
-    color     : white; 
+    color     : white;  */
     display   : none;
 } 
 

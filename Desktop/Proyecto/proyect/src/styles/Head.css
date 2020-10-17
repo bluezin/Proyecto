@@ -1,6 +1,6 @@
 .Head{
   /* background-color: rgb(102, 106, 117); */
-  background-color: rgb(145, 156, 190);
+  background-color: #a4a4a4;
   padding: 1% 1% 8%;
   max-height: 10vh;
 }
@@ -29,4 +29,11 @@
   .logotipo{
     width: 70%;
   }
+}
+
+@media screen and (max-width: 990px){
+.Head{
+  background-color:transparent;
+
+}
 }

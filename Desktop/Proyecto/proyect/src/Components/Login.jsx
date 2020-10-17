@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../styles/Login.css";
 import profe from "../imagenes/profesor.png";
-// import mail from "../imagenes/icons-mail.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
-import LoginForm from"./LoginForm"
+import LoginForm from "./LoginForm";
+import Register from "./Register";
 
+// import mail from "../imagenes/icons-mail.png";
 // import Typography from "@material-ui/core/Typography";
-
 
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
@@ -16,7 +16,7 @@ const Login = () => {
 
     console.log(booleano);
   };
-  
+
   const arrayTeacher = [
     " ¿ Qué puedo hacer como Genio?",
     " 1. Selecciono las asignaturas.",
@@ -40,16 +40,41 @@ const Login = () => {
     " 5. Selecciono la que se ajuste a mi bolsillo y a mi nivel educativo.",
     " 6. Entrego mi tarea y disfruto de mi tiempo libre.",
   ];
+
+  const [boo, setBoo] = useState(true);
+
+  const handleRegister = () => {
+    setBoo(true);
+    console.log(boo)
+  };
+  const handleLogin = () => {
+    setBoo(false);
+    console.log(boo)
+
+  };
+
   return (
     <div className="Login">
       <div className="fondoLogin-mobile">
         <div className="card-leftdivider">
           <div className="card-leftdividerFirst">
             <div className="card-sectionButtonClass">
-                <button className="ButtonClass" type="button" onClick={handleProfesor}>Genio</button>
-                <button className="ButtonClass" type="button" onClick={handleEstudiante}>Estudiante</button>
+              <button
+                className="ButtonClass"
+                type="button"
+                onClick={handleProfesor}
+              >
+                Genio
+              </button>
+              <button
+                className="ButtonClass"
+                type="button"
+                onClick={handleEstudiante}
+              >
+                Estudiante
+              </button>
             </div>
-            
+
             <div>
               <div className="card-sectionTextClass">
                 {booleano
@@ -69,16 +94,19 @@ const Login = () => {
 
           <div className="card-leftdividerSecond">
             {booleano ? (
-              <img src={profe} alt="logos" className="logos" />
+              <img src={profe} alt="logos" className="logos-profe" />
             ) : (
-              <img src={estudiante} alt="logos" className="logos" />
+              <img src={estudiante} alt="logos" className="logos-profe" />
             )}
           </div>
         </div>
 
         <div className="card-rightdivider">
-          <LoginForm/>
-          
+          {boo ? (
+            <LoginForm handleLogin={handleLogin} />
+          ) : (
+            <Register handleRegister={handleRegister} />
+          )}
         </div>
       </div>
     </div>

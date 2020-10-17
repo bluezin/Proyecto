@@ -6,13 +6,13 @@ import user from "../imagenes/icons-user.png";
 import candado from "../imagenes/icon-candado.png";
 import mail from "../imagenes/icons-mail.png";
 
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
-// import Checkbox from '@material-ui/core/Checkbox';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
 import TextField from "@material-ui/core/TextField";
 import { Link } from "react-router-dom";
 
 
-const Register = () => {
+const Register = ({ handleRegister }) => {
   return (
     <div className="Register">
       <div className="card-loginForm">
@@ -53,9 +53,8 @@ const Register = () => {
           <div className="textRegister">
               <p>
                 Ya tengo cuenta
-                <Link to="/Login">
-                  <Button  ><b> Ingresar</b></Button>
-                </Link>
+                  <Button onClick={handleRegister} ><b> Ingresar</b></Button>
+                
               </p>
           </div>
         </div>

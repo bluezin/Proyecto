@@ -3,34 +3,86 @@
   font-size: 1.5em;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  background-position: center;
   height: 100%;
   color: #fff;
-  
+  padding-bottom: 100%;
+
   /* background-attachment: fixed; */
 }
-.h1 {
-  padding-top: 110px;
-}
+
 .each-slide{
   height: 100%;
 }
 .Button-Home {
-  left: 250px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
+  left         : 250px;
+  border       : none;
+  outline      : none;
+  cursor       : pointer;
+  background   : #00B7F1;
   border-radius: 20px;
-  width: 260px;
-  padding: 6px;
-  font-size: 1.5rem;
-  margin-top: 59px;
-  color: white;
-  font-weight: bold;
-  font-family: monospace;
+  width        : 260px;
+  padding      : 6px;
+  font-size    : 1.5rem;
+  margin-top   : 59px;
+  color        : white;
+  font-weight  : bold;
+  font-family  : monospace;
 }
-/* /*  */
-/* @media screen and (max-width: 312px) {
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Home{
+    padding-bottom: 100%;
+    font-size: 2em;
+    text-align: center;
+  }
+  .homeText-principal{
+    margin: 0 11%;
+
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .Home{
+    padding-bottom: 100%;
+    font-size: 2em;
+    text-align: center;
+  }
+  .homeText-principal{
+    margin: 0 11%;
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Home{
+    padding-bottom: 100%;
+    font-size: 2em;
+    text-align: center;
+  }
+  .homeText-principal{
+    margin: 0 11%;
+
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+
+}
+/* 
+@media screen and (max-width: 312px) {
   .Button-Home {
     width: 80%;
     font-size: 15px;
