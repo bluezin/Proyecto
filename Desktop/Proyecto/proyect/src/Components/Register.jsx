@@ -45,7 +45,7 @@ const Register = ({ handleRegister }) => {
               required
             />
           </div>
-          <div className="registerContainer-password">
+          <div className="registerContainer-password-sec">
             <img src={candado} alt="candado" className="candado" />
             <TextField
               id="newPswdConfirm"

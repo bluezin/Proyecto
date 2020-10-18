@@ -57,6 +57,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+ 
     .titleRegister{
         font-weight: 700;
         margin     : 4% 0 6%;
@@ -72,6 +73,10 @@
     }
     .registerContainer-password{
         margin: 5% 0;
+    }
+    .registerContainer-password-sec{
+        margin: 5% 0 0;
+
     }
     #demo-simple-select.MuiInput-root {
         position: relative;
