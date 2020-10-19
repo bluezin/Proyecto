@@ -20,13 +20,9 @@ const LoginForm = ({ handleLogin }) => {
   return (
     <div className="LoginForm">
       <div className="card-loginForm">
-<<<<<<< HEAD
-        <p className="titleLogin">Iniciar Sesión</p>
-=======
         <div>
           <p className="titleLogin">Iniciar Sesión</p>
         </div>
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
         <div className="LoginContainer">
           <div className="LoginContainer-email">
             <img src={user} alt="mail" className="mail" />
@@ -34,11 +30,7 @@ const LoginForm = ({ handleLogin }) => {
           </div>
           <div className="LoginContainer-password">
             <img src={candado} alt="candado" className="candado" />
-<<<<<<< HEAD
-            <TextField id="pswd" label="Contraseña" required />
-=======
             <TextField id="pswd" label="Contraseña" type="password" required />
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
           </div>
           <div className="login-fogiveme">
             <div className="login-forgotcheck">
@@ -55,13 +47,7 @@ const LoginForm = ({ handleLogin }) => {
               />
             </div>
             <div className="forgotLink">
-<<<<<<< HEAD
-              <Button className="Button_login" style={{ fontSize: 12 }}>
-                olvidé mi contraseña
-              </Button>
-=======
               <Button className="ButtonForgot">olvidé mi contraseña</Button>
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
             </div>
           </div>
           <div className="Buttongo-div">

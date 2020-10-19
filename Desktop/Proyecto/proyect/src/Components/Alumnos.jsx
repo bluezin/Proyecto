@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Alumnos = () => {
   return (
-    <div className="Alumnos">
+    <div className="Task">
       <div>
         <h1 className="informacion como">Como solucionar mis tareas en 6 pasos</h1>
         <div className="lista">

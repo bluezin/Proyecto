@@ -1,13 +1,6 @@
 import React from "react";
 import "../styles/Register.css";
 
-<<<<<<< HEAD
-const Register = ({ handleRegister }) => {
-  return (
-    <div>
-      <div className="Register">Holaaaaaa</div>
-      <button onClick={handleRegister}>Inicia secion</button>
-=======
 import Button from "@material-ui/core/Button";
 import user from "../imagenes/icons-user.png";
 import candado from "../imagenes/icon-candado.png";
@@ -87,7 +80,6 @@ const Register = ({ handleRegister }) => {
           </div>
         </div>
       </div>
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
     </div>
   );
 };

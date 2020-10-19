@@ -21,9 +21,6 @@
   flex-wrap: wrap;
   height: 100%;
 }
-<<<<<<< HEAD
-
-=======
 .react-slideshow-wrapper.slide {
   width: 100%;
   overflow: hidden;
@@ -50,20 +47,12 @@
   color: #666;
   outline: 0;
 }
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 @media screen and (min-width: 1125px) {
  
 }
 
 @media screen and (max-width: 1125px) {
-<<<<<<< HEAD
-  body {
-    overflow-y: scroll;
-    
-  }
-=======
  
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 }
 
 @media screen and (max-width: 990px){

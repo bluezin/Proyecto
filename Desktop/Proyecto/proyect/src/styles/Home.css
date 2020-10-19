@@ -1,9 +1,5 @@
 .Home {
   background-image: url(../imagenes/imagen.png);
-<<<<<<< HEAD
-  height: 450px;
-  width: 100vw;
-=======
   font-size: 1.5em;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -11,7 +7,6 @@
   height: 100%;
   color: #fff;
   padding-bottom: 100%;
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 }
 
 .each-slide{
@@ -54,34 +49,6 @@
     font-size: 2em;
     text-align: center;
   }
-<<<<<<< HEAD
-}
-
-@media screen and (min-width: 1125px) {
-  .Home {
-    height: 440;
-  }
-}
-@media screen and (max-width: 1125px) {
-  .Home {
-    height: 610px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .Button {
-    margin-top: 160px;
-  }
-}
-
-
-@media screen and (min-height: 768px) {
-  .Home {
-    padding-top: 40px;
-    height: 600px;
-  }
-}
-=======
   .homeText-principal{
     margin: 0 11%;
 
@@ -112,4 +79,3 @@
 
 
 }
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1

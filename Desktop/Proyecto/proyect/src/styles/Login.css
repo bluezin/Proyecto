@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
-.Login {
-  font-family: "Open Sans", sans-serif;
-  /* height: 440px; */
-  /* max-height: 640px; */
-}
-
-.LoginForm {
-  text-align: center;
-=======
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 .Login{
     font-family: 'Open Sans', sans-serif;
@@ -18,43 +7,12 @@
     max-height : 100%;
     transition: all 0.3s;
 
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 }
 
 .ButtonClass:focus {
   color: black;
 }
 .ButtonClass {
-<<<<<<< HEAD
-  margin: 2%;
-  font-size: 15px;
-  background-color: transparent;
-  outline: none;
-  border: 2px solid white;
-  border-radius: 1%;
-  padding: 0.51em 1.5em;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 0 6px rgb(45, 192, 192);
-  cursor: pointer;
-}
-.card-leftdivider {
-  background: rgb(0, 171, 206);
-  background: linear-gradient(
-    rgba(0, 171, 206, 1) 0%,
-    rgba(0, 183, 241, 1) 35%,
-    rgba(0, 213, 177, 1) 100%
-  );
-  color: white;
-  display: none;
-}
-
-.titleLogin {
-  font-weight: 700;
-  margin: 4% 0 22%;
-  font-size: 2rem;
-}
-=======
     margin          : 2%;
     font-size       : 15px;
     background-color: transparent;
@@ -78,52 +36,11 @@
     width      : 100%;
     font-size  : 2rem;
 }
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 
 .MuiCheckbox-colorPrimary.Mui-checked {
   color: rgb(0, 171, 206);
 }
 .Button-login {
-<<<<<<< HEAD
-  margin-top: 20px;
-  font-size: 15px;
-  background-color: rgb(45, 192, 192);
-  outline: none;
-  border: none;
-  border-radius: 15px;
-  padding: 14px 49px 14px 49px;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 0 6px rgb(45, 192, 192);
-  cursor: pointer;
-}
-.MuiAppBar-colorPrimary {
-  color: #fff;
-  background-color: transparent;
-  margin: 0 10%;
-}
-.MuiAppBar-root {
-  width: 60%;
-  display: flex;
-  z-index: 1100;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.MuiTab-root {
-  text-transform: capitalize;
-}
-.MuiFormControl-root {
-  border: 0;
-  margin: 2%;
-  display: inline-flex;
-  padding: 0;
-  position: relative;
-  min-width: 0;
-  flex-direction: column;
-  vertical-align: top;
-  width: 100%;
-=======
     margin-top      : 20px;
     font-size       : 15px;
     background-color: rgb(45, 192, 192);
@@ -174,7 +91,6 @@ p.MuiTypography-body1 {
 #email-label{
     padding: 3% 14%;
     font-size  : .82em;
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 }
 .MuiTypography-body1 {
   font-size: 1.65rem;
@@ -226,38 +142,6 @@ span.MuiTypography-body1 {
   font-size: 0.8em;
   text-align: center;
 }
-<<<<<<< HEAD
-.logos-profe {
-  width: 200%;
-  margin-left: -80px;
-}
-
-.imagen {
-  width: 30%;
-  position: absolute;
-  bottom: 13%;
-}
-
-.Buttongo-div {
-  text-align: center;
-}
-
-.Buttongo {
-  margin-top: 7%;
-  font-size: 1rem;
-  background: rgb(0, 171, 206);
-  outline: none;
-  border: none;
-  border-radius: 15px;
-  padding: 3% 1%;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 0 6px rgb(45, 192, 192);
-  cursor: pointer;
-  width: 50%;
-  font-family: sans-serif;
-}
-=======
 .textRegister{
     font-size: 0.8em;
     text-align: center;
@@ -287,345 +171,11 @@ button.Buttongo {
     width        : 90%;
     font-family  : sans-serif;
 } 
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 
 /* SECTION esta es la sección de el responsive*/
 
 
 /* Extra small devices (phones, 600px and down) */
-<<<<<<< HEAD
-
-@media only screen and (max-width: 600px) {
-  .Login {
-    background: rgb(0, 171, 206);
-    background: linear-gradient(
-      rgba(0, 171, 206, 1) 0%,
-      rgba(0, 183, 241, 1) 35%,
-      rgba(0, 213, 177, 1) 100%
-    );
-    height: 90vh;
-    width: 100vw;
-  }
-  .fondoLogin-mobile {
-    background-color: aliceblue;
-    margin: 6% 8%;
-    display: inline-flex;
-    /* width: 83vw; */
-    /* height: 73vh; */
-    border-radius: 5%;
-  }
-  .card-rightdivider {
-    margin: 13% 11%;
-  }
-  .titleLogin {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-  .card-loginForm {
-    margin: 0 0 0 0%;
-    height: 60vh;
-  }
-
-  .LoginContainer-email {
-    width: 68vw;
-    align-items: center;
-    margin: 12% 0;
-  }
-  .LoginContainer-password {
-    width: 68vw;
-    align-items: center;
-    margin: 16% 0 1%;
-  }
-  #email-label {
-    padding: 3% 14%;
-    font-size: 0.82em;
-  }
-  #email {
-    padding: 5% 14%;
-  }
-  #pswd {
-    padding: 5% 14%;
-  }
-  #pswd-label {
-    font-size: 0.82em;
-    padding: 3% 14%;
-  }
-  .login-fogiveme {
-    width: 68vw;
-    grid-template-columns: auto auto;
-  }
-}
-
-.titleLogin {
-  font-size: 30px;
-  margin-top: -80px;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .Login {
-    background: rgb(0, 171, 206);
-    background: linear-gradient(
-      rgba(0, 171, 206, 1) 0%,
-      rgba(0, 183, 241, 1) 35%,
-      rgba(0, 213, 177, 1) 100%
-    );
-  }
-  .fondoLogin-mobile {
-    background-color: aliceblue;
-    /* margin: 6% 8%; */
-    /* display: inline-flex; */
-
-    border-radius: 5%;
-  }
-  .card-rightdivider {
-    margin: 13% 11%;
-  }
-
-  #email-label {
-    padding: 3% 14%;
-    font-size: 0.82em;
-  }
-  #email {
-    padding: 5% 14%;
-  }
-  #pswd {
-    padding: 5% 14%;
-  }
-  #pswd-label {
-    font-size: 0.82em;
-    padding: 3% 14%;
-  }
-}
-.MuiButton-root {
-  font-size: 1em;
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .card-loginForm {
-    margin: 0 0 0 7%;
-  }
-  .card-rightdivider {
-    /* margin: 7% 11%; */
-    text-align: center;
-  }
-  #email-label {
-    padding: 3% 14%;
-    font-size: 0.82em;
-  }
-  #email {
-    padding: 5% 14%;
-  }
-  #pswd {
-    padding: 5% 14%;
-  }
-  #pswd-label {
-    font-size: 0.82em;
-    padding: 3% 14%;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .login {
-    display: flex;
-    position: relative;
-    margin: 0;
-  }
-  .fondoLogin-mobile {
-    background-color: aliceblue;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 79vh;
-    border-radius: 0%;
-  }
-  .card-leftdivider {
-    background: rgb(0, 171, 206);
-    background: linear-gradient(
-      rgba(0, 171, 206, 1) 0%,
-      rgba(0, 183, 241, 1) 35%,
-      rgba(0, 213, 177, 1) 100%
-    );
-    color: white;
-    display: flex;
-    grid-template-columns: auto auto;
-    /* height: 662px; */
-  }
-  .djj {
-    display: flex;
-  }
-  .card-sectionButtonClass {
-    display: flex;
-    grid-template-columns: auto auto;
-  }
-
-  .card-leftdividerFirst {
-    margin: 4%;
-  }
-  .logos {
-    width: 48%;
-    height: 45%;
-    margin: 21% -14%;
-  }
-  .card-leftdividerSecond {
-    margin: 40% 0 0;
-  }
-  .descrption-question {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  .card-rightdivider {
-    margin: 11% 0%;
-    width: 50vw;
-  }
-  .card-loginForm {
-    margin: auto;
-    width: 31vw;
-  }
-  .LoginContainer-password {
-    width: 33vw;
-    align-items: center;
-    margin: 4% 0 1%;
-  }
-
-  .LoginContainer-email {
-    width: 33vw;
-    align-items: center;
-    margin: 14% 0;
-  }
-  .card-sectionTextClass {
-    margin: 2%;
-    font-size: 0.83em;
-    width: 36vw;
-  }
-  .card-rightdivider {
-    margin: 7% 0%;
-    text-align: unset;
-    width: 66vw;
-  }
-  #email-label {
-    padding: 1% 9%;
-    font-size: 0.82em;
-  }
-  #email {
-    padding: 3% 14%;
-  }
-  #pswd {
-    padding: 3% 14%;
-  }
-  #pswd-label {
-    padding: 1% 9%;
-    font-size: 0.82em;
-  }
-
-  .forgotLink {
-    font-size: 0.61em;
-    text-align: end;
-    margin: 5.5% 0 0% 0%;
-  }
-  .mail {
-    display: flex;
-    margin: 0 0 -12% 0;
-  }
-
-  .candado {
-    display: flex;
-    margin: 0 0 -12% 0;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  /* form {
-    display: flex;
-    position: relative;
-  } */
-
-  .card-leftdivider {
-    background: rgb(0, 171, 206);
-    background: linear-gradient(
-      rgba(0, 171, 206, 1) 0%,
-      rgba(0, 183, 241, 1) 35%,
-      rgba(0, 213, 177, 1) 100%
-    );
-    grid-template-columns: 3fr 1;
-    display: flex;
-    color: white;
-  }
-  .card-leftdividerFirst {
-    margin: 2%;
-  }
-  .card-sectionButtonClass {
-    display: flex;
-    grid-template-columns: auto auto;
-  }
-  .card-leftdividerSecond {
-    margin: 25% 0;
-  }
-  .descrption-question {
-    font-size: 1.5em;
-    margin: 0;
-  }
-
-  .card-sectionTextClass {
-    margin: 2%;
-  }
-}
-
-/* modificado */
-
-@media only screen and (max-width: 992px) {
-  .Login {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 70px;
-  }
-  .fondoLogin-mobile {
-    width: 430px;
-    height: 530px;
-    margin: auto;
-    padding-top: 5px;
-  }
-  .titleLogin {
-    margin-top: 5px;
-    text-align: center;
-  }
-  .LoginContainer-password {
-    width: 100%;
-    padding-top: 22px;
-  }
-  .LoginContainer-email {
-    width: 100%;
-  }
-
-  .mail {
-    display: flex;
-    margin: 0 0 -16% 0;
-  }
-
-  .candado {
-    display: flex;
-    margin: 0 0 -16% 0;
-  }
-  .forgotLink {
-    font-size: 0.61em;
-    margin: auto;
-  }
-}
-
-@media only screen and (max-width: 509px) {
-  .fondoLogin-mobile {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-height: 768px) {
-  .fondoLogin-mobile {
-    height: 85vh;
-  }
-}
-=======
 @media screen and (max-width: 480px){
     .Login{
         background: rgb(0,171,206);
@@ -1178,4 +728,3 @@ button.Buttongo {
 
 }
  
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1

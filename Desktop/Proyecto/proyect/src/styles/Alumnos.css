@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
 
 .Alumnos{
   background-image: url(../imagenes/laptop.png);
@@ -122,5 +122,141 @@
 @media screen and (min-height: 768px) {
   .Alumnos {
     height: 640px;
+  }
+} */
+
+/*  */
+
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
+
+.Task {
+  background-image: url(../imagenes/laptop.png);
+  font-size: 1.5em;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+}
+
+.Button-Task {
+  left: 250px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #00b7f1;
+  border-radius: 20px;
+  width: 260px;
+  padding: 6px;
+  font-size: 1.5rem;
+  margin-top: 59px;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+}
+.Button-div {
+  text-align: center;
+  align-items: center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .task-Imag {
+    display: contents;
+  }
+  .student {
+    width: 19%;
+    height: 55%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+    opacity: 0.2;
+  }
+  .informacion-como {
+    padding: 2%;
+    padding: 2% 9%;
+    text-align: left;
+    font-size: 1.4em;
+  }
+  .lista {
+    padding: 10%;
+    text-align: justify;
+    font-size: 0.8em;
+  }
+  .profe-p span {
+    text-indent: 0.1rem;
+    display: inline;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .task-Imag {
+    display: contents;
+  }
+  .student {
+    width: 19%;
+    height: 55%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+    opacity: 0.2;
+  }
+  .informacion-como {
+    padding: 2%;
+    padding: 2% 9%;
+    text-align: left;
+    font-size: 1.4em;
+  }
+  .lista {
+    padding: 10%;
+    text-align: justify;
+    font-size: 0.8em;
+  }
+  .profe-p span {
+    text-indent: 0.1rem;
+    display: inline;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .task-Imag {
+    display: contents;
+  }
+  .student {
+    width: 5%;
+    height: 36%;
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    opacity: 1;
+    right: 40%;
+    top: 0%;
+  }
+  .informacion-como {
+    padding: 2%;
+    padding: 2% 9%;
+    text-align: left;
+    font-size: 1.5em;
+  }
+  .lista {
+    padding: 0 8%;
+    text-align: justify;
+    font-size: 1em;
+  }
+  .profe-p span {
+    text-indent: 0.1rem;
+    display: inline;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .p-Task {
+    margin-left: 13px;
+    margin-top: 23px;
   }
 }

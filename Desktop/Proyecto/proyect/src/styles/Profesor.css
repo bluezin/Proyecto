@@ -42,15 +42,9 @@
   .div-imagen{
     display: contents;
   }
-<<<<<<< HEAD
-  .Profesor {
-    height: 450px;
-
-=======
   .como{
     font-size: 2em;
     padding  : 5%;
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
   }
   .imagen-profesor{
     width      : 19%;
@@ -118,26 +112,6 @@
   }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 371px) {
-  .Button-profe {
-    width: 80%;
-    font-size: 15px;
-  }
-  .imagen-profesor {
-    width: 60%;
-    margin-bottom: 36px;
-  }
-  .div-imagen{
-    margin-top: 1px;
-  }
-}
-
-@media screen and (min-height: 768px) {
-  .Profesor {
-    height: 638px;
-  }
-=======
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
@@ -148,5 +122,4 @@
 
 
 
->>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 }
