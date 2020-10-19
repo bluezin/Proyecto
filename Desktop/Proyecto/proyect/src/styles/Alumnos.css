@@ -5,7 +5,7 @@
   font-size: 17px;
 }
 
-.Button-Task {
+.Button-Alumno {
   left: 250px;
   border: none;
   outline: none;
@@ -101,7 +101,7 @@
 }
 
 @media screen and (max-width: 371px) {
-  .Button-Task {
+  .Button-Alumno {
     width: 50%;
     font-size: 15px;
   }
@@ -129,7 +129,7 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
 
-.Task {
+.Alumno {
   background-image: url(../imagenes/laptop.png);
   font-size: 1.5em;
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -138,7 +138,7 @@
   color: #fff;
 }
 
-.Button-Task {
+.Button-Alumno {
   left: 250px;
   border: none;
   outline: none;
@@ -159,7 +159,7 @@
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .task-Imag {
+  .Alumno-Imag {
     display: contents;
   }
   .student {
@@ -189,7 +189,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .task-Imag {
+  .Alumno-Imag {
     display: contents;
   }
   .student {
@@ -219,7 +219,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .task-Imag {
+  .Alumno-Imag {
     display: contents;
   }
   .student {
@@ -255,7 +255,7 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .p-Task {
+  .p-Alumno {
     margin-left: 13px;
     margin-top: 23px;
   }
