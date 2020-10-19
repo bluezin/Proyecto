@@ -6,8 +6,7 @@
 }
 
 .LoginForm {
-  margin-top: -70px;
-
+  text-align: center;
 }
 
 .ButtonClass:focus {
@@ -40,7 +39,6 @@
 .titleLogin {
   font-weight: 700;
   margin: 4% 0 22%;
-  width: 100%;
   font-size: 2rem;
 }
 
@@ -112,14 +110,7 @@
   margin: 10% 0;
   width: 100%;
 }
-.candado {
-  display: flex;
-  margin: 0 0 -21% 0;
-}
-.mail {
-  display: flex;
-  margin: 0 0 -21% 0;
-}
+
 .LoginContainer-email {
   width: 100%;
   align-items: center;
@@ -136,12 +127,7 @@ span.MuiTypography-body1 {
   display: flex;
 }
 
-.forgotLink {
-  font-size: 0.61em;
-  text-align: end;
-  margin: 5.5% 0 0% 0%;
-  width: 100%;
-}
+/*  */
 .DescrptionTextLogin {
   font-size: 1em;
 }
@@ -155,9 +141,9 @@ span.MuiTypography-body1 {
 }
 
 .imagen {
-  width: 37%;
+  width: 30%;
   position: absolute;
-  bottom: 8%;
+  bottom: 13%;
 }
 
 .Buttongo-div {
@@ -165,7 +151,7 @@ span.MuiTypography-body1 {
 }
 
 .Buttongo {
-  margin-top: 12%;
+  margin-top: 7%;
   font-size: 1rem;
   background: rgb(0, 171, 206);
   outline: none;
@@ -184,7 +170,6 @@ span.MuiTypography-body1 {
 
 /* Extra small devices (phones, 600px and down) */
 
-
 @media only screen and (max-width: 600px) {
   .Login {
     background: rgb(0, 171, 206);
@@ -193,7 +178,6 @@ span.MuiTypography-body1 {
       rgba(0, 183, 241, 1) 35%,
       rgba(0, 213, 177, 1) 100%
     );
-    margin: -3% 0 0 0%;
     height: 90vh;
     width: 100vw;
   }
@@ -201,8 +185,8 @@ span.MuiTypography-body1 {
     background-color: aliceblue;
     margin: 6% 8%;
     display: inline-flex;
-    width: 83vw;
-    height: 73vh;
+    /* width: 83vw; */
+    /* height: 73vh; */
     border-radius: 5%;
   }
   .card-rightdivider {
@@ -210,16 +194,13 @@ span.MuiTypography-body1 {
   }
   .titleLogin {
     font-weight: 700;
-    width: 100%;
     font-size: 1.5rem;
   }
   .card-loginForm {
     margin: 0 0 0 0%;
     height: 60vh;
   }
-  .MuiButton-root {
-    font-size: 1em;
-  }
+
   .LoginContainer-email {
     width: 68vw;
     align-items: center;
@@ -250,6 +231,11 @@ span.MuiTypography-body1 {
   }
 }
 
+.titleLogin {
+  font-size: 30px;
+  margin-top: -80px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .Login {
@@ -259,26 +245,17 @@ span.MuiTypography-body1 {
       rgba(0, 183, 241, 1) 35%,
       rgba(0, 213, 177, 1) 100%
     );
-    /* margin: -1% 0 -2% 0%; */
-    /* height: 83vh; */
-    /* margin-bottom: -70px; */
   }
   .fondoLogin-mobile {
     background-color: aliceblue;
-    margin: 6% 8%;
-    display: inline-flex;
-    width: 83vw;
-    height: 73vh;
+    /* margin: 6% 8%; */
+    /* display: inline-flex; */
+
     border-radius: 5%;
   }
   .card-rightdivider {
     margin: 13% 11%;
   }
-  .titleLogin {
-    font-weight: 700;
-    width: 100%;
-    font-size: 1.5rem;
-  }
 
   #email-label {
     padding: 3% 14%;
@@ -294,45 +271,18 @@ span.MuiTypography-body1 {
     font-size: 0.82em;
     padding: 3% 14%;
   }
-  .MuiButton-root {
-    font-size: 1em;
-  }
 }
-
+.MuiButton-root {
+  font-size: 1em;
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /* .Login {
-    background: rgb(0, 171, 206);
-    background: linear-gradient(
-      rgba(0, 171, 206, 1) 0%,
-      rgba(0, 183, 241, 1) 35%,
-      rgba(0, 213, 177, 1) 100%
-    );
-    margin: -3% 0 0 0%;
-    height: 90vh;
-    width: 100vw;
-  } */
-  .fondoLogin-mobile {
-    background-color: aliceblue;
-    margin: 6% 8%;
-    display: inline-flex;
-    width: 83vw;
-    height: 73vh;
-    border-radius: 8%;
-  }
-  .titleLogin {
-    font-weight: 700;
-    margin: 3% 0;
-    width: 100%;
-    font-size: 1.5rem;
-  }
   .card-loginForm {
     margin: 0 0 0 7%;
   }
   .card-rightdivider {
-    margin: 7% 11%;
+    /* margin: 7% 11%; */
     text-align: center;
-    width: 66vw;
   }
   #email-label {
     padding: 3% 14%;
@@ -347,27 +297,6 @@ span.MuiTypography-body1 {
   #pswd-label {
     font-size: 0.82em;
     padding: 3% 14%;
-  }
-  .MuiButton-root {
-    font-size: 1em;
-  }
-  .LoginContainer-email {
-    width: 58vw;
-    align-items: center;
-    margin: 4% 0;
-  }
-  .LoginContainer-password {
-    width: 58vw;
-    align-items: center;
-    margin: 4% 0 1%;
-  }
-  .mail {
-    display: flex;
-    margin: 0 0 -12% 0;
-  }
-  .candado {
-    display: flex;
-    margin: 0 0 -12% 0;
   }
 }
 
@@ -383,7 +312,7 @@ span.MuiTypography-body1 {
     margin: 0;
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: 79vh;
     border-radius: 0%;
   }
   .card-leftdivider {
@@ -426,7 +355,7 @@ span.MuiTypography-body1 {
     width: 50vw;
   }
   .card-loginForm {
-    margin: 0 0 0 7%;
+    margin: auto;
     width: 31vw;
   }
   .LoginContainer-password {
@@ -434,6 +363,7 @@ span.MuiTypography-body1 {
     align-items: center;
     margin: 4% 0 1%;
   }
+
   .LoginContainer-email {
     width: 33vw;
     align-items: center;
@@ -463,18 +393,29 @@ span.MuiTypography-body1 {
     padding: 1% 9%;
     font-size: 0.82em;
   }
-  .forgotLink button {
-    font-size: 0.81em;
-    margin: -5% 0 0 0;
+
+  .forgotLink {
+    font-size: 0.61em;
+    text-align: end;
+    margin: 5.5% 0 0% 0%;
+  }
+  .mail {
+    display: flex;
+    margin: 0 0 -12% 0;
+  }
+
+  .candado {
+    display: flex;
+    margin: 0 0 -12% 0;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  form {
+  /* form {
     display: flex;
     position: relative;
-  }
+  } */
 
   .card-leftdivider {
     background: rgb(0, 171, 206);
@@ -504,5 +445,58 @@ span.MuiTypography-body1 {
 
   .card-sectionTextClass {
     margin: 2%;
+  }
+}
+
+/* modificado */
+
+@media only screen and (max-width: 992px) {
+  .Login {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+  .fondoLogin-mobile {
+    width: 430px;
+    height: 530px;
+    margin: auto;
+    padding-top: 5px;
+  }
+  .titleLogin {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .LoginContainer-password {
+    width: 100%;
+    padding-top: 22px;
+  }
+  .LoginContainer-email {
+    width: 100%;
+  }
+
+  .mail {
+    display: flex;
+    margin: 0 0 -16% 0;
+  }
+
+  .candado {
+    display: flex;
+    margin: 0 0 -16% 0;
+  }
+  .forgotLink {
+    font-size: 0.61em;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 509px) {
+  .fondoLogin-mobile {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-height: 768px) {
+  .fondoLogin-mobile {
+    height: 85vh;
   }
 }

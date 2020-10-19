@@ -1,125 +1,74 @@
-@import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
-
-.Task {
-  background-image: url(../imagenes/laptop.png);
-  font-size: 17px;
+.Task-body{
+background-color: rgb(224, 242, 252);
+height: 80vh;
 }
 
-.Button-Task {
-  left: 250px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
-  border-radius: 20px;
-  width: 260px;
-  padding: 6px;
-  font-size: 1.5rem;
-  margin-top: 59px;
-  color: white;
-  font-weight: bold;
-  font-family: monospace;
+.strong_Task {
+  background-color: #16beff;
+  margin: 2px;
+  padding: 10px;
+  width: 320px;
+  display: inline-block;
 }
-.Button-div {
+
+.color-Task-h4 {
+  color: #16beff;
+  border-top: #16beff 4px solid;
+  width: 210px;
+  padding-top: 12px;
+  font-size: 18px;
+  margin-left: 13px;
+  margin-top: 23px;
+}
+
+.color-Task-h5 {
+  color: #16beff;
+  position: absolute;
+  right: 30px;
+  font-size: 18px;
+}
+
+.div-color-Task {
+  display: flex;
+}
+
+.div-strong {
   text-align: center;
-}
-
-.lista {
-  margin-left: 150px;
   color: white;
-  margin-top: 20px;
 }
 
-
-
-@media screen and (min-width: 1140px) {
-  .div-student {
-    position: relative;
-    top: -300px;
-    left: 900px;
-  }
-
-  .student {
-    width: 330px;
-  }
-  .Task {
-    height: 440px;
-  }
-  .Button-div {
-    margin-top: -350px;
-  }
-
+.datos-Task {
+  position: absolute;
+  /* left: 1020px; */
+  right: 50px;
+  top: 150px;
 }
 
-@media screen and (max-width: 1140px) {
-  .Task {
-    height: 610px;
-  }
-
-  .div-student {
-    text-align: center;
-    margin-top: -50px
-  }
-  .student {
-    width: 330px;
-  }
-  .Button-div {
-    text-align: center;
-    margin-top: -120px;
-  }
+.datos-img {
+  width: 220px;
+  margin-bottom: 25px;
 }
 
-
-
-@media screen and (min-width: 715px) {
-  .informacion {
-    margin-left: 150px;
-    color: white;
-    padding-top: 80px;
-  }
-
-
+.p-Task {
+  margin-left: 13px;
+  margin-top: 23px;
 }
 
-@media screen and (max-width: 715px) {
-  .informacion {
-    color: white;
-    padding-top: 80px;
-    text-align: center;
-  }
-  .como{
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 573px) {
-  .lista {
-    margin-left: 30px;
-  }
-
-
+.BsCheckCircle {
+  font-size: 19px;
+  color: #5d79f7;
+  position: relative;
+  top: 2px;
 }
 
-@media screen and (max-width: 371px) {
-  .Button-Task {
-    width: 50%;
-    font-size: 15px;
-  }
-  .Button-div {
-    margin-bottom: 100px;
-  }
-  .student {
-    width: 60%;
-    margin-bottom: 36px;
-  }
-  .div-student {
-    margin-top: 1px;
-  }
+.FIFilter{
+  position: relative;
+  top: 4px;
 }
 
-
-
-@media screen and (min-height: 768px) {
-  .Task {
-    height: 640px;
-  }
+.BsFillXCircleFill{
+  position: relative;
+  top: 5px;
+  margin-right: 4px;
+  cursor: pointer;
 }

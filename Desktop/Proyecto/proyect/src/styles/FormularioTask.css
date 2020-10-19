@@ -1,0 +1,70 @@
+.FormularioTask {
+  color: black;
+  display: block;
+  background-color: white;
+  width: 500px;
+  /* margin-left: 50px; */
+  /* margin-top: -120px; */
+  margin: auto;
+  margin-top: -80px;
+}
+
+
+.div-strong-form {
+  text-align: center;
+  margin-bottom: 17px;
+}
+.strong-form {
+  background-color: #16beff;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.input-form {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 2px #888888;
+  outline: none;
+  font-size: 15px;
+  margin: 12px;
+  width: 370px;
+}
+::placeholder {
+  color: black;
+}
+
+.div-input {
+  text-align: center;
+}
+
+.div-button {
+  display: flex;
+  margin: 12px;
+}
+
+.input-desc {
+  width: 370px;
+  padding-bottom: 85px;
+  outline: #888888;
+  border: solid 2px #888888;
+}
+
+.input-desc::placeholder{
+  padding: 12px;
+}
+
+.button-form {
+  background-color: #16beff;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  padding: 5px;
+  margin-right: 30px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+  color: white;
+}

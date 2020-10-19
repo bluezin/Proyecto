@@ -1,33 +1,53 @@
 import React from "react";
+import FormularioTask from "./FormularioTask";
+import { BsCheckCircle, BsFillXCircleFill } from "react-icons/bs";
+import { FiFilter } from "react-icons/fi";
 import "../styles/Task.css";
-import student from "../imagenes/estudiante.png";
-
-import { Link } from "react-router-dom";
+import TaskImagen from "../imagenes/task.png";
 
 const Task = () => {
   return (
-    <div className="Task">
-      <div>
-        <h1 className="informacion como">Como solucionar mis tareas en 6 pasos</h1>
-        <div className="lista">
-          <li className="profe-p">Selecciono mi tarea</li>
-          <li className="profe-p">Lleno el formulario</li>
-          <li className="profe-p">Envio mi solicitud</li>
-          <li className="profe-p">Evaluo las diferentes opciones</li>
-          <li className="profe-p">Selecciono lo que se ajusta a mi bolsillo y a mi nivel educativo</li>
-          <li className="profe-p">Entrego mi tarea y disfruto de mi tiempo libre</li>
-        </div>
-        <div className="div-student">
-          <img src={student} alt="student" className="student" />
-        </div>
+    <div className="Task-body">
 
-        <div className="Button-div">
-          <Link to="/login">
-            <button className="Button-Task">INGRESAR</button>
-          </Link>
-        </div>
-      
+      <div className="div-strong">
+        <strong className="strong_Task">Muro de tareas</strong>
+        <strong className="strong_Task">Mis Tareas</strong>
       </div>
+
+      <div className="div-color-Task">
+        <h4 className="color-Task-h4">Envia tu tarea</h4>
+        <h4 className="color-Task-h5">
+          Filtrar <FiFilter style={{ fontSize: 20 }} className="FIFilter" />
+        </h4>
+      </div>
+
+      <p className="p-Task">
+        <BsFillXCircleFill
+          style={{
+            color: "#16beff",
+            fontSize: 20,
+          }}
+          className="BsFillXCircleFill"
+        />
+        Crea una solicitud de tarea
+      </p>
+
+      <div className="datos-Task">
+        <p className="datos-p">
+          <BsCheckCircle className="BsCheckCircle" /> Completa el Formulario
+        </p>
+        <p className="datos-p">
+          <BsCheckCircle className="BsCheckCircle" /> Espera las ofertas
+        </p>
+        <p className="datos-p">
+          <BsCheckCircle className="BsCheckCircle" /> Selecciona tu mejor opcion
+        </p>
+        <p className="datos-p">
+          <BsCheckCircle className="BsCheckCircle" /> Disfruta de tu tiempo
+        </p>
+        <img className="datos-img" src={TaskImagen} alt="imagen" />
+      </div>
+      <FormularioTask />
     </div>
   );
 };

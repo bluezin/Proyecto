@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
+
+.Alumnos{
+  background-image: url(../imagenes/laptop.png);
+  font-size: 17px;
+}
+
+.Button-Task {
+  left: 250px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
+  border-radius: 20px;
+  width: 260px;
+  padding: 6px;
+  font-size: 1.5rem;
+  margin-top: 59px;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+}
+.Button-div {
+  text-align: center;
+}
+
+.lista {
+  margin-left: 150px;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 1140px) {
+  .div-student {
+    position: relative;
+    top: -300px;
+    left: 900px;
+  }
+
+  .student {
+    width: 330px;
+  }
+  .Alumnos {
+    height: 450px;
+
+  }
+  .Button-div {
+    margin-top: -350px;
+  }
+
+}
+
+@media screen and (max-width: 1140px) {
+  .Alumnos {
+    height: 610px;
+  }
+
+  .div-student {
+    text-align: center;
+    margin-top: -50px
+  }
+  .student {
+    width: 330px;
+  }
+  .Button-div {
+    text-align: center;
+    margin-top: -120px;
+  }
+}
+
+
+
+@media screen and (min-width: 715px) {
+  .informacion {
+    margin-left: 150px;
+    color: white;
+    padding-top: 80px;
+  }
+
+
+}
+
+@media screen and (max-width: 715px) {
+  .informacion {
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+  }
+  .como{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 573px) {
+  .lista {
+    margin-left: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 371px) {
+  .Button-Task {
+    width: 50%;
+    font-size: 15px;
+  }
+  .Button-div {
+    margin-bottom: 100px;
+  }
+  .student {
+    width: 60%;
+    margin-bottom: 36px;
+  }
+  .div-student {
+    margin-top: 1px;
+  }
+}
+
+
+
+@media screen and (min-height: 768px) {
+  .Alumnos {
+    height: 640px;
+  }
+}

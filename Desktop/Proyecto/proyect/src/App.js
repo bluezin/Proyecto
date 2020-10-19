@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./Components/Home";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
-import Task from "../src/Components/Task";
+import Alumnos from "../src/Components/Alumnos";
 import Profesor from "../src/Components/Profesor";
 
 function App() {
@@ -20,13 +20,12 @@ function App() {
           <Home />
         </div>
         <div className="each-slide">
-          <Task />
+          <Alumnos />
         </div>
         <div className="each-slide">
           <Profesor />
         </div>
       </Slide>
-          {/* <Home /> */}
 
     </div>
   );
