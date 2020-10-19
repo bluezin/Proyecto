@@ -1,6 +1,29 @@
+<<<<<<< HEAD
 .Head {
   background-color: rgb(145, 156, 190);
   width: 100%;
+=======
+.Head{
+  background-color: #4A4A4A;
+  padding: 1% 1% 8%;
+  max-height: 10vh;
+}
+.h1 {
+  padding-top: 110px;
+}
+.Button {
+  left: 250px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
+  border-radius: 20px;
+  width: 260px;
+  padding: 10px;
+  font-size: 1.7rem;
+  margin-top: 59px;
+  color: white;
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 }
 
 
@@ -14,3 +37,12 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 990px){
+  .Head{
+    background-color:transparent;
+
+  }
+}
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1

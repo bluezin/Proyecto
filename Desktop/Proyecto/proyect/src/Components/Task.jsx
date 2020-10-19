@@ -7,6 +7,7 @@ import TaskImagen from "../imagenes/task.png";
 
 const Task = () => {
   return (
+<<<<<<< HEAD
     <div className="Task-body">
 
       <div className="div-strong">
@@ -31,6 +32,27 @@ const Task = () => {
         />
         Crea una solicitud de tarea
       </p>
+=======
+    <div className="Task">
+      <div>
+        <div className="div-student">
+          <h1 className="informacion-como">¿Cómo solucionar mis tareas en 6 pasos?</h1>
+        </div>
+        <div className="task-Imag">
+          <img src={student} alt="student" className="student" />
+        </div>
+        <div className="lista">
+          <div>
+            <li className="profe-p"> <span> Selecciono mi tarea.</span></li>
+            <li className="profe-p"> <span> Lleno el formulario.</span></li>
+            <li className="profe-p"> <span> Envío mi solicitud.</span></li>
+            <li className="profe-p"> <span> Evalúo las diferentes opciones</span></li>
+            <li className="profe-p"> <span> Selecciono la que se ajusta a mi bolsillo.</span></li>
+            <li className="profe-p"> <span> Entrego mi tarea y disfruto de mi tiempo libre.</span></li>
+          </div>
+
+        </div>
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 
       <div className="datos-Task">
         <p className="datos-p">

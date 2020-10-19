@@ -1,95 +1,124 @@
 .Profesor {
-  background-image: url(../imagenes/lampara.png);
-  font-size: 17px;
+  background-image : url(../imagenes/lampara.png);
+  font-size        : 1em;
+  position         : relative;
+  height           : 100%;
+  background-repeat: no-repeat;
+  background-size  : cover;
+  color            : white;
 
 }
 .profe-p{
-  list-style: circle;
+  list-style: decimal;
+}
+.profe-p span{
+  padding: 2%;
 }
 
-.informacion-profesor {
-  margin-left: 150px;
-  color: white;
-  padding-top: 80px;
-}
 
+.Button-profesor{
+  text-align : center;
+  align-items: center;
+}
 .Button-profe {
-  left: 250px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
-  width: 260px;
-  height: 40px;
+
+  left         : 250px;
+  border       : none;
+  outline      : none;
+  cursor       : pointer;
+  background   : #00B7F1;
   border-radius: 20px;
-  font-size: 1.4rem;
-  color: white;
-  font-weight: bold;
-  font-family: monospace;
+  width        : 260px;
+  padding      : 6px;
+  font-size    : 1.5rem;
+  margin-top   : 59px;
+  color        : white;
+  font-weight  : bold;
+  font-family  : monospace;
 }
 
-
-
-
-@media screen and (min-width: 1126px) {
-  .Button-profesor {
-    text-align: center;
-    margin-top: -250px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .div-imagen{
+    display: contents;
   }
+<<<<<<< HEAD
   .Profesor {
     height: 450px;
 
+=======
+  .como{
+    font-size: 2em;
+    padding  : 5%;
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
   }
-  .div-imagen {
-    position: relative;
-    top: -260px;
-    left: 1000px;
+  .imagen-profesor{
+    width      : 19%;
+    height     : 55%;
+    display    : flex;
+    position   : fixed;
+    align-items: flex-end;
+    opacity    : .2;
+  }
+  .informacion-profesor{
+    margin   : 5%;
+    padding  : 2%;
+    font-size: 1.3em;
   }
 
-  .imagen-profesor {
-    width: 300px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .div-imagen{
+    display: contents;
+  }
+  .como{
+    font-size: 2em;
+    padding  : 5%;
+  }
+  .imagen-profesor{
+    width      : 19%;
+    height     : 55%;
+    display    : flex;
+    position   : fixed;
+    align-items: flex-end;
+    opacity    : .2;
+  }
+  .informacion-profesor{
+    margin   : 5%;
+    padding  : 2%;
+    font-size: 1.3em;
   }
 }
 
-@media screen and (max-width: 1126px) {
-  .div-imagen {
-    text-align: center;
-    margin-top: -30px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .div-imagen{
+    display: contents;
   }
-  .imagen-profesor {
-    width: 330px;
+  .como{
+    font-size: 2.5em;
+    padding  : 0 5%;
   }
-  .Button-profesor {
-    text-align: center;
-    margin-top: -40px;
+  .imagen-profesor{
+    width      : 25%;
+    height     : 30%;
+    display    : flex;
+    position   : absolute;
+    align-items: flex-end;
+    opacity    : 1;
+    right      : 0%;
+    top: 0%;
   }
-  .Profesor {
-    height: 610px;
-
-  }
-}
-
-@media screen and (max-width: 748px) {
-  .Button-profesor {
-    text-align: center;
-    margin-top: -50px;
-  }
-}
-@media screen and (max-width: 573px) {
-  .informacion-profesor {
-    margin-left: 30px;
+  .informacion-profesor{
+    margin   : 0 5%;
+    padding  : 2%;
+    font-size: 1.5em;
   }
 }
 
-@media screen and (max-width: 510px) {
-  .profe-p {
-    font-size: 15px;
-  }
-  .como {
-    font-size: 25px;
-  }
-}
-
+<<<<<<< HEAD
 @media screen and (max-width: 371px) {
   .Button-profe {
     width: 80%;
@@ -108,4 +137,16 @@
   .Profesor {
     height: 638px;
   }
+=======
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 }

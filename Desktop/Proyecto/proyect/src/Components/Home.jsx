@@ -6,9 +6,12 @@ const Home = () => {
   return (
     <div>
       <div className="Home">
-        <h1 className="h1">Tu tranquilo,</h1>
-        <h1>Si eres estudiante, te ayudamos a resolver tus tareas</h1>
-        <div className="">
+        <div className="homeText-principal">
+          <p className="h1">Tu tranquilo,</p>
+          <p>Si eres estudiante, te ayudamos a resolver tus tareas</p>
+
+        </div>
+        <div className="inButton">
           <Link to="/login">
             <button className="Button-Home">INGRESAR</button>
           </Link>

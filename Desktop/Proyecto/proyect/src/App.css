@@ -1,20 +1,74 @@
 * {
-  padding: 0;
-  margin: 0;
+	box-sizing : border-box;
+	padding    : 0;
+	margin     : 0;
+	overflow   : hidden; /* es para que no tenga scroll  nop recomendado en mobile*/
+  max-height: 100vh;
+  transition: all 0.3s;
+  
 }
-body {
-  overflow: hidden;
+.SOLID{
+  height: 100%;
 }
+.App{
+  max-height: 80vh;
+  max-width: 100vw;
+  height: 80vh;
 
+}
+.react-slideshow-wrapper .images-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+<<<<<<< HEAD
+
+=======
+.react-slideshow-wrapper.slide {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.react-slideshow-container{
+  height: 100%;
+}
+.react-slideshow-container .default-nav {
+  height: auto;
+  background: transparent;
+  width: 30px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-slideshow-container .default-nav:hover, .react-slideshow-container .default-nav:focus {
+  background: transparent;
+  color: #666;
+  outline: 0;
+}
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 @media screen and (min-width: 1125px) {
-  body {
-    overflow: hidden;
-  }
+ 
 }
 
 @media screen and (max-width: 1125px) {
+<<<<<<< HEAD
   body {
     overflow-y: scroll;
     
+  }
+=======
+ 
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
+}
+
+@media screen and (max-width: 990px){
+  body{
+    background: rgb(0,171,206);
+    background: linear-gradient( rgba(0,171,206,1) 0%, rgba(0,183,241,1) 35%, rgba(0,213,177,1) 100%);
   }
 }

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import "../styles/Login.css";
 import profe from "../imagenes/profesor.png";
-// import mail from "../imagenes/icons-mail.png";
 import children from "../imagenes/children.png";
 import estudiante from "../imagenes/estudiante.png";
 import LoginForm from "./LoginForm";
 import Register from "./Register";
 
+<<<<<<< HEAD
 // import Typography from "@material-ui/core/Typography";
 
+=======
+>>>>>>> cada678bbdf24e5ad7098ede0e9fa4bd66c47bf1
 const Login = () => {
   const [booleano, setBooleano] = useState(true);
   const handleProfesor = () => {
