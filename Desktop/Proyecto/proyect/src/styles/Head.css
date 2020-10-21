@@ -1,16 +1,38 @@
-.Head {
-  background-color: rgb(145, 156, 190);
-  width: 100%;
+.Head{
+  background-color: #4A4A4A;
+  padding: 1% 1% 8%;
+  max-height: 10vh;
+}
+.h1 {
+  padding-top: 110px;
+}
+.Button {
+  left: 250px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(rgb(32, 190, 238) 0%, rgb(43, 239, 253) 100%);
+  border-radius: 20px;
+  width: 260px;
+  padding: 10px;
+  font-size: 1.7rem;
+  margin-top: 59px;
+  color: white;
 }
 
-
-.logotipo {
-  width: 180px;
+.logotipo{
+  width: 220px;
 }
 
-@media screen and (max-width: 312px) {
-  .logotipo {
+@media screen and (max-width: 312px){
+  .logotipo{
     width: 70%;
   }
 }
 
+@media screen and (max-width: 990px){
+  .Head{
+    background-color:transparent;
+
+  }
+}
