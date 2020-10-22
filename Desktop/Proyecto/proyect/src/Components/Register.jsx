@@ -22,61 +22,68 @@ const Register = ({ handleRegister }) => {
   };
   return (
     <div className="Register">
-      <div className="card-loginForm">
-        <div>
-                <p className="titleRegister">Iniciar Sesión</p>
-        </div>
+      <div className="card-registerForm">
+        
         <div className="registerContainer">
-          <div className="registerContainer-user">
-            <img src={user} alt="user" className="user" />
-            <TextField id="username" label="Nombre de usuario" type="user" required />
+          <div className="">
+
+            <div>
+                    <p className="titleRegister">Registro</p>
+            </div>
+            <div className="registerContainer-user">
+              <img src={user} alt="user" className="user" />
+              <TextField id="username" label="Nombre de usuario" type="user" required />
+            </div>
+            <div className="registerContainer-email">
+              <img src={mail} alt="mail" className="mail" />
+              <TextField id="newEmail" label="Correo" type="email" required />
+            </div>
+          
+            <div className="registerContainer-password">
+              <img src={candado} alt="candado" className="candado" />
+              <TextField
+                id="newpswd"
+                label="Contraseña"
+                type="password"
+                required
+              />
+            </div>
           </div>
-          <div className="registerContainer-email">
-            <img src={mail} alt="mail" className="mail" />
-            <TextField id="newEmail" label="Correo" type="email" required />
-          </div>
-         
-          <div className="registerContainer-password">
-            <img src={candado} alt="candado" className="candado" />
-            <TextField
-              id="newpswd"
-              label="Contraseña"
-              type="password"
-              required
-            />
-          </div>
-          <div className="registerContainer-password-sec">
-            <img src={candado} alt="candado" className="candado" />
-            <TextField
-              id="newPswdConfirm"
-              label="Confirmar Contraseña"
-              type="password"
-              required
-            />
-          </div>
-          <div className="radioButtonSelection">
-            <FormControl className="selection">
-              <InputLabel id="demo-simple-select-label">Tipo</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={age}
-                onChange={handleChange}
-              >
-                <MenuItem value={1}>Estudiante</MenuItem>
-                <MenuItem value={2}>Genio</MenuItem>
-              </Select>
-            </FormControl>
-          </div>
-          <div>
-            <button className="Buttongo">Registrarme</button>
-          </div>
-          <div className="textRegister">
-              <p>
-                Ya tengo cuenta
-                  <Button onClick={handleRegister} ><b> Ingresar</b></Button>
-                
-              </p>
+          <div className="">
+            <div className="registerContainer-password-sec">
+              <img src={candado} alt="candado" className="candado" />
+              <TextField
+                id="newPswdConfirm"
+                label="Confirmar Contraseña"
+                type="password"
+                required
+              />
+            </div>
+            <div className="radioButtonSelection">
+              <FormControl className="selection">
+                <InputLabel id="demo-simple-select-label">Tipo</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  onChange={handleChange}
+                >
+                  <MenuItem value={1}>Estudiante</MenuItem>
+                  <MenuItem value={2}>Genio</MenuItem>
+                </Select>
+              </FormControl>
+            </div>
+            <div>
+              <button className="Buttongo">Registrarme</button>
+            </div>
+            <div className="textRegister">
+                <p>
+                  Ya tengo cuenta
+                    <Button onClick={handleRegister} ><b> Ingresar</b></Button>
+                  
+                </p>
+            </div>
+
           </div>
         </div>
       </div>

@@ -20,47 +20,52 @@ const LoginForm = ({ handleLogin }) => {
   return (
     <div className="LoginForm">
       <div className="card-loginForm">
-        <div>
-          <p className="titleLogin">Iniciar Sesión</p>
-        </div>
         <div className="LoginContainer">
-          <div className="LoginContainer-email">
-            <img src={user} alt="mail" className="mail" />
-            <TextField id="email" label="Correo" type="email" required />
-          </div>
-          <div className="LoginContainer-password">
-            <img src={candado} alt="candado" className="candado" />
-            <TextField id="pswd" label="Contraseña" type="password" required />
-          </div>
-          <div className="login-fogiveme">
-            <div className="login-forgotcheck">
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    checked={state.checkedB}
-                    onChange={handleChangeChk}
-                    name="checkedB"
-                    color="primary"
+          <div>
+            <div>
+              <p className="titleLogin">Iniciar Sesión</p>
+            </div>
+              <div className="LoginContainer-email">
+                <img src={user} alt="mail" className="mail" />
+                <TextField id="email" label="Correo" type="email" required />
+              </div>
+              <div className="LoginContainer-password">
+                <img src={candado} alt="candado" className="candado" />
+                <TextField id="pswd" label="Contraseña" type="password" required />
+              </div>
+              <div className="login-fogiveme">
+                <div className="login-forgotcheck">
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={state.checkedB}
+                        onChange={handleChangeChk}
+                        name="checkedB"
+                        color="primary"
+                      />
+                    }
+                    label="Recuerdame"
                   />
-                }
-                label="Recuerdame"
-              />
+                </div>
+                <div className="forgotLink">
+                  <Button className="ButtonForgot">olvidé mi contraseña</Button>
+                </div>
+              </div>
+          </div>
+          <div className="LoginButtonSection">
+            <div className="Buttongo-div">
+              <button className="Buttongo">Ingresar</button>
             </div>
-            <div className="forgotLink">
-              <Button className="ButtonForgot">olvidé mi contraseña</Button>
+            <div className="textRegister">
+              <p>
+                No tengo cuenta
+                <Button onClick={handleLogin}>
+                  <b> Registrame</b>
+                </Button>
+              </p>
             </div>
           </div>
-          <div className="Buttongo-div">
-            <button className="Buttongo">Ingresar</button>
-          </div>
-          <div className="textRegister">
-            <p>
-              No tengo cuenta
-              <Button onClick={handleLogin}>
-                <b> Registrame</b>
-              </Button>
-            </p>
-          </div>
+
         </div>
       </div>
     </div>

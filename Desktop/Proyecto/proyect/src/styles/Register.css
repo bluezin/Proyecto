@@ -1,20 +1,23 @@
 .Register{
-    max-width: 80vw;
+    max-width : 80vw;
     max-height: 80vh;
+}
+.registerContainer{
+    display              : contents;
 }
 #username{
     padding: 3% 9%;
 }
 #username-label{
-    padding: 1% 15%;
-    font-size  : .82em;
+    padding  : 1% 15%;
+    font-size: .82em;
 }
 #newEmail{
     padding: 3% 9%;
 }
 #newEmail-label{
-    font-size  : .82em;
-    padding: 1% 15%;
+    font-size: .82em;
+    padding  : 1% 15%;
 }
 #newpswd{
     padding: 3% 9%;
@@ -27,13 +30,13 @@
     padding: 3% 9%;
 }
 #newPswdConfirm-label{
-    font-size  : .82em;
-    padding: 1% 15%;
+    font-size: .82em;
+    padding  : 1% 15%;
 
 }
 .user{
     display: flex;
-    margin: 0 0 -17% 0;
+    margin : 0 0 -17% 0;
 }
 .registerContainer{
     margin: 0 2%;
@@ -56,9 +59,18 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
- 
-    .titleRegister{
+@media only screen and (max-width: 500px) {
+    .card-registerForm{
+        margin: 0 0 0 0%;
+        /* height: 60vh; */
+        width: 100%;
+        height: 100%;
+    }
+    .registerContainer{
+        display              : contents;
+    }
+    
+    /* .titleRegister{
         font-weight: 700;
         margin     : 4% 0 6%;
         width      : 100%;
@@ -73,41 +85,118 @@
     }
     .registerContainer-password{
         margin: 5% 0;
-    }
-    .registerContainer-password-sec{
-        margin: 5% 0 0;
-
-    }
+    } */
     #demo-simple-select.MuiInput-root {
         position: relative;
-        width: 100%;
+        width   : 100%;
     }
     .textRegister {
-        font-size: 0.8em;
+        font-size : 0.8em;
         text-align: center;
-        margin: -3% 0;
-        padding: 0% 0;
+        margin    : -3% 0;
+        padding   : 0% 0;
     }
+    .card-rightdivider {
+        margin: 6% 9%;
+        width : 100%;
+        height: 68vh;
+    }
+   
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .card-rightdivider {
+        margin: 6% 9%;
+        width : 100%;
+        height: 68vh;
+    }
+    .registerContainer{
+        display              : contents;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .registerContainer{
+        display              : contents;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .registerContainer{
+        display              : contents;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .registerContainer{
+        display              : contents;
+    }
 
+}
+@media only screen and (min-height: 320px) {
+    .Register{
+        max-width : 90vw;
+        max-height: 62vh;
+    }
+    .registerContainer{
+        display              : flex;
+        grid-template-columns: auto auto ;
+    }
+   
+    .titleRegister {
+        font-weight: 700;
+        margin     : 4% 0 0%;
+        width      : 100%;
+        font-size  : 1.22em;
+    }
 
+    #username{
+        padding: 3% 9%;
+    }
+    #username-label{
+        padding  : 1% 15%;
+        font-size: .82em;
+    }
+    #newEmail{
+        padding: 3% 9%;
+    }
+    #newEmail-label{
+        font-size: .82em;
+        padding  : 1% 15%;
+    }
+    #newpswd{
+        padding: 3% 9%;
+    }
+    #newpswd-label{
+        font-size  : .82em;
+        padding: 1% 15%;
+    }
+    #newPswdConfirm{
+        padding: 3% 9%;
+    }
+    #newPswdConfirm-label{
+        font-size: .82em;
+        padding  : 1% 15%;
+    
+    }
+    .registerContainer-user {
+        margin: 0% 0;
+    }
+    .registerContainer-user{
+        margin: 2% 0;
+    }
+    .registerContainer-email{
+        margin: 2% 0;
+        
+    }
+    .registerContainer-password{
+        margin: 2% 0;
+    }
+   
+    
 }
