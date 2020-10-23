@@ -3,6 +3,10 @@
   padding: 1% 1% 8%;
   max-height: 10vh;
 }
+.logo {
+  width: 20%;
+  color: white;
+}
 .h1 {
   padding-top: 110px;
 }
@@ -21,18 +25,57 @@
 }
 
 .logotipo{
-  width: 220px;
+  width: 30%;
 }
 
 @media screen and (max-width: 312px){
   .logotipo{
-    width: 70%;
+    width: 30%;
   }
 }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logotipo{
+    width: 32%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .logotipo{
+    width: 34%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .logotipo{
+    width: 30%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
 @media screen and (max-width: 990px){
   .Head{
     background-color:transparent;
-
+  
   }
+ 
+}
+
+@media only screen and (min-width: 990px) {
+  .logotipo{
+    width: 20%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .logotipo{
+    width: 20%;
+  }
+
 }
