@@ -8,10 +8,12 @@ import Profesor from "../src/Components/Profesor";
 
 function App() {
   const properties = {
-    duration: 8000,
+    duration: 8000,   
     transitionDuration: 800,
     arrows: true
   }
+
+  
   
   return (
     <div className="App">

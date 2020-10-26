@@ -3,17 +3,11 @@ background-color: rgb(224, 242, 252);
 height: 80vh;
 }
 
-.strong_Task {
-  background-color: #16beff;
-  margin: 2px;
-  padding: 10px;
-  width: 320px;
-  display: inline-block;
-}
+
 
 .color-Task-h4 {
   color: #16beff;
-  border-top: #16beff 4px solid;
+  border-top: #6e787c 4px solid;
   width: 210px;
   padding-top: 12px;
   font-size: 18px;
@@ -21,12 +15,7 @@ height: 80vh;
   margin-top: 23px;
 }
 
-.color-Task-h5 {
-  color: #16beff;
-  position: absolute;
-  right: 30px;
-  font-size: 18px;
-}
+
 
 .div-color-Task {
   display: flex;
@@ -57,10 +46,6 @@ height: 80vh;
   top: 2px;
 }
 
-.FIFilter{
-  position: relative;
-  top: 4px;
-}
 
 .BsFillXCircleFill{
   position: relative;

@@ -8,6 +8,9 @@ import Profesor from "./Profesor";
 import Register from "./Register";
 import Home from "./Home";
 import Task from "./Task";
+import Ofertas from "./Ofertas";
+import MisTareas from "./MisTareas";
+
 
 const Rutas = () => {
   return (
@@ -21,6 +24,8 @@ const Rutas = () => {
           <Route exact path="/Register" component={Register} />
           <Route exact path="/Home" component={Home} />
           <Route exact path="/Task" component={Task} />
+          <Route exact path="/ofertas" component={Ofertas} />
+          <Route exact path="/misTareas" component={MisTareas} />
         </Switch>
       </Layout>
     </BrowserRouter>

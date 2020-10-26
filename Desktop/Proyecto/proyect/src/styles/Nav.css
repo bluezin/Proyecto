@@ -1,0 +1,27 @@
+.strong_Nav {
+  /* background-color: #16beff; */
+  margin: 2px;
+  padding: 10px;
+  width: 110px;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+}
+
+.strong_Nav:hover {
+  color: #16beff;
+}
+
+.color-Nav-h5 {
+  color: #16beff;
+  position: absolute;
+  right: 30px;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+
+.FIFilter {
+  position: relative;
+  top: 4px;
+}

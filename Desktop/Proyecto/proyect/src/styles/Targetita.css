@@ -1,0 +1,67 @@
+.targetita {
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgb(0, 0, 0, 0.7);
+  display: inline-block;
+  margin: 22px;
+}
+
+.id-profe {
+  display: flex;
+  margin: 12px;
+}
+
+.p-id-profe {
+  padding: 5px;
+}
+
+.time {
+  position: relative;
+  top: 15px;
+  margin: 9px;
+}
+
+.h3-targetita {
+  font-size: 18px;
+  margin: 19px;
+}
+
+.button-targe {
+  text-align: center;
+  margin: 12px;
+}
+
+.button-elegir {
+  border: none;
+  outline: none;
+  background-color: #16beff;
+  color: white;
+  padding: 8px;
+  border-radius: 15px;
+  width: 110px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .h3-targetita {
+    font-size: 10px;
+    margin: 17px;
+  }
+  .button-elegir {
+    width: 70%;
+  }
+
+  .data {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .data {
+    display: flex;
+    font-size: 19px;
+  }
+  .pesos {
+    margin-left: 16px;
+  }
+}

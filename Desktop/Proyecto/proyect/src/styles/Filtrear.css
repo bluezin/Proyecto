@@ -1,0 +1,142 @@
+.filtrear {
+  background-color: rgb(238, 229, 247);
+  padding: 34px;
+  position: absolute;
+  right: 0;
+  top: 53px;
+  /* padding-bottom: 121px; */
+  height: 100vh;
+  z-index: 1;
+}
+
+.checkbox {
+  display: flex;
+  margin: 6px;
+}
+
+.FiFilter {
+  cursor: pointer;
+}
+
+.filtrear-buton-div {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Buton-filter {
+  background-color: #1166ee;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  width: 125px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+.Buton-filter:focus {
+  border: 3px solid rgb(135, 235, 218);
+}
+
+.checkbox_input {
+  height: 21px;
+}
+
+.por-carrera {
+  position: absolute;
+  left: 10px;
+  color: #70a2f3;
+
+  font-weight: bold;
+  border-top: 1.2px solid black;
+  width: 220px;
+}
+
+.por-tipo {
+  position: absolute;
+  left: 10px;
+  color: #70a2f3;
+  font-weight: bold;
+}
+
+.restaurar {
+  color: #6199f3;
+}
+
+.div-restaurar{
+text-align: center;
+}
+
+.heartbeat {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
